@@ -1,0 +1,117 @@
+@import "_mixins/cbyk-mixins";
+
+
+
+/*.cb-BannerMeio{
+    display: flex;
+    .banner{
+        padding: 10px;
+    }
+}*/
+
+.fullbanner > .box-banner:not(:first-child) {
+    display: none;
+  }
+
+.siganos{
+    font-size: 36px!important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 5px 46px;
+    background: #FFC701;
+   display: inline-block;
+    height: 50px;
+    color: #633510 !important;
+    font-family: "ChaletComprime-CologneEighty";
+    text-align: center;
+}
+
+.cb-iconeMeio{
+   
+
+        .icone{
+            text-align: center;
+            padding: 0 41px 0px 0;
+            .imgIcone{
+                margin-right: -10%;
+                margin-left: -3em;
+                width: 38%;
+            }
+            img{
+                width: 50%;
+                height: auto;
+                display: initial;
+            }
+            p{
+                font-size: 20px;
+                font-weight: 700;
+                color: #3BAE2A;
+                height: 36%;
+                margin: -54px 0px 0px 0px;
+            }
+            span{
+                font-size: 14px;
+            }
+        }
+}
+.cb-home-icone{
+margin-top: 4em;
+margin-bottom: 4em;
+}
+.cb-BannerFinal{
+  
+       .bannerFinal{
+            padding: 12px;
+        }
+}
+
+
+@media (max-width: 600px) {
+
+    .cb-home-icone{
+        margin-top: 2em;
+        margin-bottom: 4em;
+    }
+    
+    .cb-iconeMeio {
+        .icone{
+            text-align: center;
+            padding: 0px 23px 0px 23px;
+            p{
+                font-size: 21px;
+                font-weight: 700;
+                color: #3BAE2A;
+                height: 36%;
+                margin: 0px 0px 0px 0px;
+                display: flex;
+                justify-content: center;
+                margin-top: 0em;
+                margin-bottom: 0px;
+                img{
+                    margin-right: 0%;
+                    margin-left: 0em;
+                    width: 38%;
+                    margin-top: -13%;
+                }
+            }
+            span{
+                margin-right: -24px;
+                margin-left: 0em;
+                width: 38%;
+                margin-top: -13%; 
+            }
+            img{
+                width: 50%;
+                height: auto;
+                margin-left: 0%;
+            }
+        }
+    } 
+    }
+
+
+    @media screen and (min-width: 700px) and (max-width: 1200px) {
+        .cb-newsletter-input label #commit {
+          margin-top: 1em;
+        }
+      }

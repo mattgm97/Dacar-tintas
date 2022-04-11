@@ -1,0 +1,296 @@
+<!-- 
+ *
+ * Desenvolvido por Integrando.se
+ * hello@integrando.se
+ * 
+ * Bootstrap v.3
+ *
+ -->
+
+ <!DOCTYPE html>
+ <html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+     xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="en-us">
+ 
+ <head>
+     <title> Produto</title>
+     <vtex:metaTags />
+     <vtex:template id="CBYK-Sa-Header-Tags" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link href="/arquivos/CSS.cbyk.sa.product.css" rel="stylesheet" type="text/css" />
+ 
+ </head>
+ 
+ <body id="product-page">
+ 
+     <div class="page">
+ 
+         <!--  SubTemplate: Header -->
+         <vtex:template id="CBYK-Sa-Header" />
+         <!-- /SubTemplate: Header -->
+ 
+         <div id="product-extra-top"></div>
+ 
+         <section id="product-content" class="container">
+ 
+             <div id="box-bread-brumb" class="d-none d-sm-block">
+                 <vtex.cmc:breadCrumb />
+             </div>
+ 
+             <div id="product-extra-middle"></div>
+ 
+             <div class="row product-details">
+
+
+                <div class="product-image col-12 col-sm-6 col-lg-6 text-center">
+                    <!--  Component: Product Images -->
+                    <vtex.cmc:ProductImage zoom="on" />
+
+                
+                </div><!-- .product-image -->
+
+                <div class="product-info col-12 col-sm-6 col-lg-6">
+
+                    <div class="product-name ">
+                        <h1>
+                            <vtex.cmc:productName />
+                        </h1>
+                      
+                    </div>
+
+                    <div class="row">
+                        <div class="codigo-produto col-12 col-lg-6">
+                            <span>Cód:</span>
+                            <vtex.cmc:skuReference />
+                            <div style="display: none;">
+                                <vtex.cmc:brandName />
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12" id="price-data">
+                            <div class="price-box">
+                                <!--  Component: Sellers -->
+                                <vtex.cmc:SellerOptions />
+
+                                <!--  Component: Price -->
+                                <vtex.cmc:skuPrice />
+
+                                <!--  Component: Sales channels -->
+                                <vtex.cmc:SalesChannelDropList />
+
+                                <!--  Component: Addicional services -->
+                                <vtex.cmc:stockKeepingUnitService />
+
+                                <!--  Component: Payment methods -->
+                                <!-- <vtex.cmc:OtherPaymentMethod/> -->
+                            </div><!-- .price-box -->
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class="seletor-sku">
+                        <vtex.cmc:skuselection />
+                    </div><!-- .seletor-sku -->
+
+                    <div class="btns-list" style="display: flex;align-items:center;justify-content:flex-start">
+                        
+                            <button type="button" class="btn btn-primary cesta-modal" data-bs-toggle="modal" data-bs-target="#ElementsModal" style="margin-right: 1em;">
+                                Essa cesta contém
+                            </button>
+
+                    
+                   
+    
+                         <a href="#anchor-more-info" class="more-info-btn"> Mais informações</a>
+                    
+                    </div>
+                    
+
+
+                   
+
+                    <div class="row">
+
+                        <div class="buy-button-box">
+                            <vtex.cmc:BuyButton />
+                        </div><!-- .buy-button-box -->
+                        <div class="shipping-box col-sm-12">
+                            <vtex.cmc:shippingValue />
+                            <script type="text/javascript">
+                                $(document).ready(function () {
+                                    ShippingValue();
+                                });
+                            </script>
+                        </div>
+
+
+
+
+                    </div>
+
+
+
+
+        
+
+                    <div id="product-extra-details-1"></div>
+
+
+
+                    <div id="product-extra-details-2"></div>
+
+                </div><!-- .product-info -->
+
+            </div><!-- .product-details -->
+ 
+ 
+ 
+             <div id="product-extra-details-3"></div>
+            
+ 
+             <div id="product-extra-description-5"></div>
+
+           
+ 
+           <!--<div class="product-description-box" id="sugestions" style="    margin: 4em 0;">
+              
+               
+             <div class="product-carousel">
+                   <vtex:contentPlaceHolder id="inclua-prods" />
+               </div> 
+                 
+               
+              <div class="product-carousel">
+                     <vtex:contentPlaceHolder id="Quem-viu-viu-tambem" />
+                 </div> 
+             </div>--> 
+             <style>
+                @media (max-width: 600px) {
+                    #svgdoprod {
+                        width: 100% !important;
+
+                    }
+                }
+            </style>
+     <div class="product-description-box" id="sugestions" style="    margin: 2em 0;">
+              
+               
+        <div class="product-carousel">
+              <vtex:contentPlaceHolder id="ofertas" />
+          </div> 
+            
+          
+        </div>
+            <div id="anchor-more-info"></div>
+             <h2 class="colection-title">ESPECIFICAÇÃO TÉCNICAS</h2>
+ 
+             <div class="product-description">
+ 
+                 <div class="btn-group" id="product-specs" role="group" aria-label="menu-anchor">
+                     <a id="btn-description" class="btn btn-default active-tab">Descrição</a>
+                     <a id="btn-specification" class="btn btn-default">Especificação</a>
+ 
+                 </div>
+ 
+            
+ 
+ 
+                 <div class="product-description-box">
+                     <div id="description">
+ 
+                         <span class="d-md-none  d-lg-none  prod-infos" style="font-weight: 800;">X Fechar</span>
+ 
+                         <!--  Component: Description -->
+                         <vtex.cmc:ProductDescription />
+                     </div><!-- .description -->
+                 </div>
+ 
+ 
+ 
+                 <div class="product-description-box">
+                     <div id="specification">
+                         <span class="d-md-none d-lg-none prod-infos" style="font-weight: 800;">X Fechar</span>
+                         <!--  Component: Specification -->
+                         <vtex.cmc:productSpecification />
+                     </div><!-- .description -->
+                 </div>
+ 
+            
+
+                   <!--   <div class="product-description-box">
+                       
+                        <vtex.cmc:BuyTogether />
+                    </div>-->
+ 
+ 
+                 <div class="product-description-box">
+                     <div id="reviews" class="rating">
+ 
+                     </div>
+                 </div>
+ 
+ 
+ 
+             </div><!-- .product-description -->
+ 
+ 
+         </section>
+ 
+         <div id="product-extra-bottom"></div>
+ 
+         <!--  SubTemplate: Footer -->
+         <vtex:template id="CBYK-Sa-footer" />
+         <!-- /SubTemplate: Footer -->
+ 
+ 
+ 
+     </div><!-- .container-fluid -->
+ 
+ 
+ 
+     <!-- Modal -->
+  
+ 
+     <div class="modal fade" id="ElementsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Essa cesta contém:</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="box-contents">
+                    <div class="row">
+                        <div class="col-12">
+
+                            <div class="thelist">
+                                <ul>
+                                    
+                                </ul>
+                            </div>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+          </div>
+        </div>
+      </div>
+ 
+ 
+ </body>
+ <script src="/arquivos/JS.cbyk.Sa.product.js"></script>
+ <vtex:template id="CBYK-Sa-footer-Tags" />
+ 
+
+ 
+ </html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <!-- So that mobile webkit will display zoomed in -->
+    <meta name="format-detection" content="telephone=no">
+    <!-- disable auto telephone linking in iOS -->
+    <title>{{_accountInfo.TradingName}}</title>
+    <style type="text/css">
+        p {
+            font-family: Fabriga, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body marginwidth="0" marginheight="0" bgcolor="#fff" style="padding:0px 0px;color:#333;" leftmargin="0" topmargin="0">
+    <!-- 100% wrapper (grey background) -->
+    <table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0" align="left" valign="top">
+        <tbody>
+            <tr>
+                <td align="center" valign="top">
+                    <table width="100%" style="max-width: 32rem;" align="center" cellpadding="0" cellspacing="0" border="0" valign="top">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div style="border:1px solid #e3e4e6;border-radius:8px;margin-top:1rem;margin-bottom:1rem;padding-top:3rem;padding-right:3rem;padding-bottom:3rem;padding-left:3rem">
+                                        <img src="/arquivos/logo-mercado-sante-header.png" max-width="100%" style="display:block;outline:none;border:none;text-decoration:none" class="CToWUd"> {{#eq aditionalData.locale "pt-BR"}}
+                                        <p style="font-size:24px;color:#25354d;margin-bottom:0px">
+                                            <strong>Seu código de acesso é:</strong></p>
+                                        <p style="color:#E3503C;font-size:42px;margin-top:0px;margin-bottom:2rem">
+                                            <strong>{{aditionalData.accessKey}}</strong></p>
+                                        <p style="font-size:16px;color:#3f3f40">
+                                            Olá, {{to.0.name}},</p>
+                                        <p style="font-size:16px;color:#3f3f40">
+                                            Por favor, retorne à página de login e insira o código acima para confirmar sua identidade.
+                                        </p>
+                                        <p style="margin-bottom:0px;font-size:16px;color:#3f3f40">
+                                            Abraços,</p>
+                                        <p style="margin-top:0px;font-size:16px;color:#3f3f40">
+                                            Equipe Mercado Santé</p><br> {{/eq}}
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!--/600px container -->
+    <!--/100% wrapper-->
+</body>
+
+</html>

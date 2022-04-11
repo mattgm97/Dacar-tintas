@@ -1,0 +1,21 @@
+@mixin cbyk-arrows-1 {
+    @include cbyk-icon;
+    // color: $color-ico-5;
+    background: transparent;
+    border: 0;
+    font-size: 0;
+}
+
+@mixin cbyk-arrows-2 {
+    @include cbyk-icon;
+    // color: $color-ico-6;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    // background: $color-bg-10;
+    // background-color: $color-bg-10 !important;
+    border-radius: 50%;
+    border: 0;
+    font-size: 0;
+    box-shadow: 3px 1px 2px #00000026;
+}

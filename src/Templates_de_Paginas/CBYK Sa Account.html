@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+ <html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="en-us">
+ 
+ <head>
+     <title>Minha conta</title>
+     <vtex:metaTags/>
+     <vtex:template id="CBYK-Sa-Header-Tags" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link href="/arquivos/CSS.cbyk.Sa.account.css" rel="stylesheet" type="text/css" />
+
+ </head>
+ 
+ <body id="account-page">
+ 
+    <header>
+        <!--  SubTemplate: Header -->
+        <vtex:template id="CBYK-Sa-Header" />
+        <!-- /SubTemplate: Header -->
+      </header>
+    
+
+    <section id="account-content" class="container">
+        <div class="row">
+            <div class="col-12 col-md-12">
+                <vtex.cmc:accountUserProfile />
+            </div>
+        </div>
+    </section>
+
+    <!--  SubTemplate: Footer -->
+    <!-- <vtex:template id="CBYK-Ca-footer" /> -->
+    <!-- /SubTemplate: Footer -->
+    <vtex:template id="CBYK-Sa-footer" />
+</body>
+<vtex:template id="CBYK-Sa-footer-Tags" />
+
+</html>

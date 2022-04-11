@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+ <html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+ 
+ <head>
+     <title>Login</title>
+     <vtex:metaTags/>
+     <vtex:template id="CBYK-Sa-Header-Tags" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     
+ </head>
+ 
+ <body id="home-page">
+ 
+     <div class="page">
+ 
+         <!--  SubTemplate: Header -->
+         <vtex:template id="CBYK-Sa-Header" />
+         <!-- /SubTemplate: Header -->
+                     
+
+                     
+         <section id="login-content" class="container">
+    		<vtex.cmc:userLogin/>
+        </section><!-- #content -->  
+                 
+         <!--  SubTemplate: Footer -->
+         <vtex:template id="CBYK-Sa-footer" />
+         <!-- /SubTemplate: Footer -->
+     
+     </div><!-- .container-fluid -->
+ 
+ </body>
+ <script>
+
+     setInterval(function(){
+        $(".vtexIdUI .modal-header .close").click(function () {
+        window.location.href = '/';
+    })
+     }, 1000);
+ 
+
+
+ </script>
+     <vtex:template id="CBYK-Sa-footer-Tags" />
+ </html>
+
+
+

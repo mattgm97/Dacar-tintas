@@ -1,0 +1,537 @@
+/* /files/checkout5-custom.css */
+
+
+@font-face {
+  font-family: "ChaletComprime-CologneEighty";
+  src: url(/arquivos/ChaletComprime-CologneEighty.ttf.css);
+  font-weight: 100;
+  font-style: normal
+}
+
+@font-face {
+font-family: 'BwModelica-Medium';
+src: url('https://mercadosante.vteximg.com.br/arquivos/BwModelica-Medium.otf.css')/*Para navegadores Internet Explorer*/;
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'BwModelica-Regular';
+src: url('https://mercadosante.vteximg.com.br/arquivos/BwModelica-Regular.otf.css')/*Para navegadores Internet Explorer*/;
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'BwModelica-Bold';
+src: url('https://mercadosante.vteximg.com.br/arquivos/BwModelica-Bold.ttf.css') /*Para os demais navegadores*/;
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'BwModelica-Light';
+src: url('https://mercadosante.vteximg.com.br/arquivos/BwModelica-Light.otf.css')/*Para navegadores Internet Explorer*/;
+font-weight: normal;
+font-style: normal;
+}
+#tracker{
+margin-bottom: 2em;
+}
+.vtex-omnishipping-1-x-svg path, .vtex-omnishipping-1-x-PickupPoint .pickup-marker-blue path, .pkpmodal-pickup-point-best-marker-image path, .srp-icon-radio-selected path{
+fill:#E3503C;
+}
+.btn-success{
+    background-image: linear-gradient(to bottom,#E3503C,#E3503C);
+background-color: #D8742F!important;
+}
+.step .text input{
+position: relative;
+  z-index: 6;
+  text-align: center;
+  width: 95%;
+}
+
+.ship-checkboxNumberLabel{
+width: 28% !important; 
+}
+
+.vtex-omnishipping-1-x-btnDelivery, .vtex-omnishipping-1-x-btnDelivery{
+   text-shadow: none !important;
+  background-image: none !important;
+  border-color: transparent !important;
+  box-shadow: none;
+  font-family: ChaletComprime-CologneEighty, sans-serif;
+  border: none;
+  background-color: #D8742F!important;
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: white !important;
+  border-radius: 0px;
+}
+
+.step .text input#ship-number{
+width: auto;
+}
+.steps-view, .gift-card-section{
+    background: #ffffff !important;
+}
+.App.iframe-credit-card-payment-group{
+ background: #ffffff !important;
+}
+#payment-group-creditCardPaymentGroup .payment-group-item-text, #payment-group-PayPalPlusPaymentGroup .payment-group-item-text{
+    background-image: none !important;
+}
+#payment-group-bankInvoicePaymentGroup .payment-group-item-text{
+background-image: none !important;
+}
+.SecurityEnvironmentIcon{
+background: #E3503C;
+color: #ffffff;
+  padding: 8px 8px 8px 8px;
+  padding-bottom: 8px;
+  float: right;
+  text-align: center;
+  z-index: 999;
+
+}
+.SecurityEnvironmentIcon .icon-lock{
+display: block;
+float: initial !important;
+color:#fff;
+}
+#payment-data-submit i{
+display:none;
+}
+#payment-data-submit{
+ padding: 10px 25px 30px 25px !important;
+}
+#btn-go-to-payment{
+padding: 10px 25px 30px 25px !important;
+}
+#go-to-shipping{
+    padding: 10px 25px 30px 25px !important;
+}
+.vtex-omnishipping-1-x-submitPaymentButton.btn-submit-wrapper.btn-go-to-payment-wrapper{
+    text-align: center;
+}
+.mini-cart h2{
+font-family: ChaletComprime-CologneEighty, sans-serif !important;
+font-weight: 100 !important;
+}
+.accordion-heading .accordion-toggle{
+ font-family: ChaletComprime-CologneEighty, sans-serif !important;
+font-weight: 100 !important;
+}
+.accordion-toggle span{
+font-family: ChaletComprime-CologneEighty, sans-serif !important;
+font-weight: 100;
+}
+.srp-main-title.mt0.mb0.f3.black-60.fw4{
+  font-family: ChaletComprime-CologneEighty, sans-serif;
+  font-weight: 100;
+}
+
+th.product, th.shipping-date, th.product-price, th.quantity, th.quantity-price{
+
+
+  font-family: ChaletComprime-CologneEighty, sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.full-cart .summary-totalizers .monetary {
+  padding: 0px 0px!important;
+  text-align: end!important;
+  padding-bottom: 22px!important;
+  font-weight: 100;
+width: 8em;
+}
+.full-cart .summary-totalizers .info{
+font-weight: 100;
+
+}
+.containerHeader{
+display: flex;
+  justify-content: space-around;
+  border-bottom: 3px solid;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  border-color: #e1e1e1;
+  margin-bottom: 25px;
+}
+.checkoutLeft a img {
+  width:90px
+}
+.checkoutRight{
+max-width: 800px;
+}
+#cart-title{
+display: none !important;
+  padding: 10px 25px;
+  background: #dbdbdb;
+  border-radius: 7px;
+  font-size: 25px;
+}
+
+
+.vtex-shipping-preview-0-x-pc .btn {
+border: 0px solid #5a8fe9 !important;
+  font-size: 0px;
+  height: 30px;
+  background-image: url(/arquivos/SETA.png) !important;
+   padding: 9px 13px !important;
+  background-repeat: no-repeat !important;
+}
+.vtex-shipping-preview-0-x-pc .ship-postalCode {
+  width: 192px !important;
+  margin: 0;
+}
+
+.vtex-shipping-preview-0-x-pc .input-small {
+  height: 30px;
+  width: 15em;
+}
+
+
+/* /files/checkout5-custom.css */
+
+#cart-title, #shipping-preview-container, #shipping-preview-container h2, #orderform-title {
+color: #444 !important;
+}
+
+.cart-items .product-name a {
+  color: #4F4F4F;
+  font-size: 15px;
+  font-weight: 700;
+}
+.clone-item.btn.btn-mini{
+display:none;
+}
+.clone-item-sep {
+  margin: 0px 0 !important;
+display:none;
+}
+
+.vtex-shipping-preview-0-x-frame,.vtex-shipping-preview-0-x-frame .srp-toggle__delivery{
+border-color: #ED3537 !important
+}
+
+.totalizers {
+border: none !important
+}
+
+.coupon-data {
+text-align: end;
+}
+
+#cart-link-coupon-add {
+color: #4F4F4F !important;
+font-size: 16px;
+}
+
+.vtex-omnishipping-1-x-shippingDataDev{
+background-color: white !important
+}
+
+.accordion-toggle-active i, .accordion-toggle.collapsed .icon-user, .accordion-toggle.collapsed .icon-home{
+display: none;
+}
+
+.payment-group-item-text{
+color:#4F4F4F !important
+}
+
+.badge{
+background-color: #ED3537 !important;
+color: white !important;
+}
+
+.full-cart .summary-totalizers tfoot .info, .full-cart .summary-totalizers tfoot .monetary {
+font-weight: 600;
+    vertical-align: sub;
+color:#D8742F!important;
+font-family: 'BwModelica-Bold';
+font-size: 21px;
+}
+
+.full-cart .summary-totalizers tr {
+border-bottom: none !important;
+font-weight: 600;
+font-size: 18px;
+vertical-align: initial !important;
+font-family: 'BwModelica-Regular';
+color: #4F4F4F !important;
+}
+
+
+.vtex-pickup-points-modal-3-x-primary{
+background: #ED3537 !important;
+  border: 1px solid #ED3537 !important;
+}
+
+
+.vtex-omnishipping-1-x-summaryChange{
+border: 1px dashed #ED3537 !important;
+color: #ED3537 !important
+}
+
+#orderform-title{
+display: none !important;
+}
+
+#details-pickup-button, .btn-link, #orderform-minicart-to-cart{
+color: #ED3537;
+}
+
+
+
+.vtex-omnishipping-1-x-svg path, .vtex-omnishipping-1-x-PickupPoint .pickup-marker-blue path, .pkpmodal-pickup-point-best-marker-image path, .srp-icon-radio-selected path {
+fill: #ED3537 !important
+}
+
+.vtex-omnishipping-1-x-pickupPointChange{
+border: 1px solid #ED3537 !important
+}
+
+.vtex-omnishipping-1-x-addressItemOption:hover, .vtex-omnishipping-1-x-active, .vtex-omnishipping-1-x-option:hover, .vtex-omnishipping-1-x-leanShippingOptionActive{
+background: #FFEDED !important;
+}
+
+.vtex-omnishipping-1-x-deliveryChannelsToggle{
+background: #ED3537 !important;
+
+border: solid 1px #ED3537 !important;
+}
+
+.onda-v1 .blue{
+color: #ED3537 !important;
+}
+
+#shipping-calculate-link{
+color: white !important;
+font-family: ChaletComprime-CologneEighty, sans-serif;
+  font-weight: 100;
+  font-size: 20px !important;
+}
+
+.mini-cart .table tfoot td {
+font-size: 18px !important;
+}
+
+.onda-v1 .bg-washed-blue {
+background-color: #EAECED !important;
+}
+
+.full-cart .cart table tbody tr td.quantity input {
+border: none;
+background-color: inherit;
+box-shadow: none;
+font-size: 18px;
+}
+
+.icon-remove {
+
+color: #D8742F!important;
+}
+
+.item-link-remove {
+font-size: 22px;
+}
+
+.new-product-price-label {
+color:  #E3503C;
+}
+
+.label-vertical-group:hover .icon-check-empty, .icon-check-sign {
+color:  #D8742F!important
+}
+
+.available-gift-item.active {
+background-color: lightblue !important;
+}
+
+.icon-minus-sign, .icon-plus-sign {
+color:  #D8742F!important;
+
+}
+
+#shipping-calculate-link {
+color: #fff;
+background-color:  #D8742F!important;
+font-weight: 400 !important;
+text-transform: uppercase;
+letter-spacing: 1px;
+border-radius: 0 !important;
+}
+
+.btn-place-order, #go-to-shipping, #btn-go-to-payment, #payment-data-submit {
+text-shadow: none !important;
+background-image: none !important;
+border-color: transparent !important;
+box-shadow: none;
+font-family: ChaletComprime-CologneEighty, sans-serif;
+border: none;
+background-color: #D8742F!important;
+font-weight: 200;
+text-transform: uppercase;
+font-size: 18px;
+letter-spacing: 1px;
+color: white;
+border-radius: 0px;
+height: 18px;
+padding: 9px 40px 9px 40px;
+}
+
+.link-choose-more-products, .link-print-cart, .link-coupon-add {
+color: black;
+text-decoration: underline;
+}
+
+#cart-coupon-add, #btn-client-pre-email {
+text-shadow: none !important;
+background-image: none !important;
+border-color: transparent !important;
+box-shadow: none;
+border: none;
+background-color: #D8742F!important;
+font-weight: 400;
+text-transform: uppercase;
+font-size: 16px;
+line-height: 22px;
+letter-spacing: 1px;
+/* height: 35px; */
+color: white;
+/* margin-top: 35%; */
+/* text-shadow: none; */
+border-radius: 0;
+}
+
+#cart-coupon {
+border-radius: 0px !important;
+}
+
+.step, .cart, .totalizers {
+border: 2px solid #EAECED;
+border-radius: 5px !important;
+}
+
+.step, .cart {
+background-color: #F4F4F4;
+border: none !important
+}
+
+.mini-cart .table tfoot td, .mini-cart .table td {
+color: #828282 !important;
+font-weight: 600 !important;
+font-family: 'BwModelica-Bold';
+
+
+}
+
+@media screen and (max-width: 600px) {
+.full-cart .cart table {
+    padding: 18px;
+}
+.step.active, .cart.active, .totalizers.active {
+    padding: 18px;
+}
+.cart {
+    background-color: #F4F4F4;
+    border: 2px solid #F4F4F4;
+    border-radius: 5px !important;
+}
+.full-cart .cart table tbody tr td.item-remove {
+    top: -1px !important;
+}
+
+.step, .cart{
+padding: 1em;
+}
+}
+
+@media screen and (min-width: 1200px) {
+.cart-items thead {
+    font-size: 19px !important;
+    color: #4F4F4F !important;
+}
+body {
+    padding-top: 0px !important;
+}
+.cart-fixed {
+    width: 304px;
+    padding: 1em;
+}
+.mini-cart h2 {
+    text-align: center !important;
+    background: none !important;
+    color: #4F4F4F !important;
+    font-size: 22px !important;
+    margin-bottom: 0.5em;
+}
+.container-cart, .container-order-form {
+    width: 1200px;
+}
+.step {
+    opacity: 0.6;
+    background-color: white;
+    border: none !important;
+    border-radius: 5px;
+}
+.cart-fixed-transition {
+    height: 400px !important;
+    border-radius: 5px;
+}
+.cart-fixed-transition, .mini-cart .summary-template-holder {
+    background-color: white;
+}
+.step.active, .cart.active, .totalizers.active {
+    border-color: none !important;
+}
+.step.active {
+    opacity: 1;
+}
+#cartLoadedDiv {
+    margin-top: 2em;
+}
+#cart-title {
+    display: none !important;
+}
+#headerco {
+    background-color: white !important;
+    padding-top: 1em;
+}
+.cart {
+    border: none !important;
+    border-radius: 5px !important;
+    background-color: white;
+}
+.body-cart, .body-order-form {
+    background-color: #F6F6F6;
+}
+.accordion-toggle-active {
+    color: #4F4F4F !important;
+    font-weight: 600 !important;
+    font-size: 22px !important;
+}
+p.submit {
+    text-align: center;
+}
+}
+
+span.f4 > span {
+font-size: 0px;
+}
+a.add-item-attachment.btn.btn-mini {
+background: #D8742F;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0.5em;
+  font-weight: 500;
+  border: none;
+}
+
+
+

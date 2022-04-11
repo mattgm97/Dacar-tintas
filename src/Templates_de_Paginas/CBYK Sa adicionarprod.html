@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+
+<head>
+    <title>Gostaria de Incluir Algo ao seu Pedido?</title>
+    <vtex:metaTags />
+    <vtex:template id="CBYK-Sa-Header-Tags" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        .prateleira.vitrine h2 {
+            display: none;
+        }
+
+        .prateleira .btn-add-buy-button-asynchronous.actionActivated{
+            font-size: 20px!important
+        }
+
+        @media screen and (max-width: 600px) {
+
+            .n1colunas>ul>li,
+            .n2colunas>ul>li,
+            .n3colunas>ul>li,
+            .n4colunas>ul>li,
+            .n5colunas>ul>li,
+            .prateleira.vitrine>ul>li {
+                width: 50%;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+
+<body id="home-page">
+
+    <div class="page">
+
+
+
+        <!--  SubTemplate: Header -->
+        <vtex:template id="CBYK-Sa-Header" />
+        <!-- /SubTemplate: Header -->
+
+        <div id="home-extra-top"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 style="font-family: ChaletComprime-CologneEighty;">Gostaria de Incluir Algo ao seu Pedido?</h1>
+
+                    <vtex:contentPlaceHolder id="sugestoes" />
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div id="category-extra-bottom"></div>
+
+        <!--  SubTemplate: Footer -->
+        <vtex:template id="CBYK-Sa-footer" />
+        <!-- /SubTemplate: Footer -->
+
+    </div><!-- .container-fluid -->
+
+</body>
+<script src="/arquivos/JS.cbyk.Sa.adicionarprods.js"></script>
+<vtex:template id="CBYK-Sa-footer-Tags" />
+
+</html>

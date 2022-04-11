@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+
+<head>
+    <title>Home | Mercado Santé</title>
+    <vtex:metaTags />
+    <vtex:template id="CBYK-Sa-Header-Tags" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/arquivos/CSS.cbyk.Sa.home.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="home-page">
+
+    <div class="page">
+
+        <!--  SubTemplate: Header -->
+        <vtex:template id="CBYK-Sa-Header" />
+        <!-- /SubTemplate: Header -->
+
+        <div id="home-extra-top"></div>
+
+        <section class="container-fluid">
+
+            <div class="fullbanner d-none d-sm-block">
+                <vtex:contentPlaceHolder id="bannersegmentado" />
+            </div><!-- .fullbanner -->
+            <div class="fullbanner d-block d-sm-none">
+                <vtex:contentPlaceHolder id="bannersegmentadomob" />
+            </div><!-- .fullbanner -->
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="product-carousel">
+                            <vtex:contentPlaceHolder id="Novidades" />
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+
+
+        <section id="home-content" class="cb-home-banner">
+            <div class="container cb-BannerMeio">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="banner" style="padding: 10px">
+                            <vtex:contentPlaceHolder id="banner1" />
+                        </div>
+                        <div class="banner" style="padding: 10px">
+                            <vtex:contentPlaceHolder id="banner2" />
+                        </div>
+                        <div class="banner" style="padding: 10px">
+                            <vtex:contentPlaceHolder id="banner3" />
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="product-carousel">
+                            <vtex:contentPlaceHolder id="hortifruti" />
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <section id="home-content" class="cb-home-icone">
+            <div class="container cb-iconeMeio">
+                <div class="row">
+                    <div class="col-12">
+                        <div class=" icone">
+                            <img src="/arquivos/123.png" alt="" />
+                            <p><img src="/arquivos/N_01.png" alt="" class="imgIcone" />
+                                ESCOLHA O PLANO</p>
+                            <span>Escolha o tipo de cesta que mais combina com a sua casa: frutas, mix Santé (frutas +
+                                verduras + legumes), mix de minis e orgânicos.</span>
+                        </div>
+                        <div class=" icone">
+                            <img src="/arquivos/mala.png" alt="" />
+                            <p><img src="/arquivos/N_02.png" alt="" class="imgIcone" />
+                                ESCOLHA SUA CESTA</p>
+                            <span>Em seguida escolha o tamanho: Pequena, Média e Grande. (Escolha de tamanho somente nas
+                                cestas mix Santé e frutas).</span>
+                        </div>
+                        <div class="icone">
+                            <img src="/arquivos/persona.png" alt="" />
+                            <p><img src="/arquivos/N_03.png" alt="" class="imgIcone" />
+                                PERSONALIZE</p>
+                            <span>Você pode também acrescentar o que quiser na sua cesta! (Valores podem variar de
+                                acordo com os produtos selecionados)</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="product-carousel">
+                            <vtex:contentPlaceHolder id="mercearia" />
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section id="home-content" class="cb-home-bannerFinal">
+            <div class="container cb-BannerFinal">
+                <div class="row">
+                    <!--  <div class="col-md-6 bannerFinal">
+                <vtex:contentPlaceHolder id="bannerOrg" />
+            </div>
+            <div class="col-md-6 bannerFinal">
+             <vtex:contentPlaceHolder id="bannerAli" />-->
+                    <div class="col-md-12 bannerFinal">
+                        <vtex:contentPlaceHolder id="bannerSingle" />
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="product-carousel">
+                            <vtex:contentPlaceHolder id="Lançamentos" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="siganos">SIGA-NOS</h2>
+
+
+                        <!-- LightWidget WIDGET -->
+                        <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe
+                            src="https://cdn.lightwidget.com/widgets/354b1f08f01852b99cd3300eb2f5e7ec.html"
+                            scrolling="no" allowtransparency="true" class="lightwidget-widget"
+                            style="width:100%;border:0;overflow:hidden;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <div id="category-extra-bottom"></div>
+
+        <!--  SubTemplate: Footer -->
+        <vtex:template id="CBYK-Sa-footer" />
+        <!-- /SubTemplate: Footer -->
+
+    </div><!-- .container-fluid -->
+
+</body>
+<vtex:template id="CBYK-Sa-footer-Tags" />
+
+</html>

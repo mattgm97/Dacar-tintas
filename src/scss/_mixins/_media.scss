@@ -1,0 +1,31 @@
+// Celular - Small devices (landscape phones, 576px and up)
+$screen-sm-min: 576px;
+
+// Tablet - Medium devices (tablets, 768px and up)
+$screen-md-min: 768px;
+
+// Desktops - Large devices (desktops, 992px and up)
+$screen-lg-min: 992px;
+
+// Desktops - X-Large devices (large desktops, 1200px and up)
+$screen-xl-min: 1200px;
+
+// Desktops - XX-Large devices (larger desktops, 1400px and up)
+$screen-xxl-min: 1400px;
+
+// Celular - X-Small devices (portrait phones, less than 576px)
+$screen-sm-max: 575.98px;
+
+// Celular - Small devices (landscape phones, less than 768px)
+$screen-md-max: 767.98px;
+
+// Tablets -  Medium devices (tablets, less than 992px)
+$screen-lg-max: 991.98px;
+
+// Desktops - Large devices (desktops, less than 1200px)
+$screen-xl-max: 1199.98px;
+
+// Desktops - X-Large devices (large desktops, less than 1400px)
+$screen-xxl-max: 1399.98px;
+
+$viewport: 380px;

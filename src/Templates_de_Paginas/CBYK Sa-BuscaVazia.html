@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+ <html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+ 
+ <head>
+     <title>Busca Vazia</title>
+     <vtex:metaTags/>
+     <vtex:template id="CBYK-Sa-Header-Tags" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     
+ </head>
+ 
+ <body id="home-page">
+ 
+     <div class="page">
+ 
+         <!--  SubTemplate: Header -->
+         <vtex:template id="CBYK-Sa-Header" />
+         <!-- /SubTemplate: Header -->
+                     
+
+                     
+         <section id="busca-vazia-content" class="container">
+
+            <div id="box-bread-brumb">
+                <vtex.cmc:breadCrumb />
+            </div>
+        
+            <div id="busca-vazia-extra-middle"></div>
+
+            <div class="row">
+
+                <article id="main-content" class="col-12">
+                                                                    
+                    <div class="title-category">
+                        <!--  Controle: Titulo -->
+                        <a href="#" class="pull-right" onclick="window.history.back();" style="color:#FFC701;font-weight: bold;text-decoration: none;margin-bottom: 1em;display: block;"><i class="fa fa-chevron-left"></i> Voltar</a> 
+                        <h2>Ops, não encontramos nada em sua busca</h2>
+                        <!-- /Controle: Titulo -->
+                    </div><!-- .title-category -->
+                            
+                    <div id="collections">
+
+                        <div class="showcase-default showcase-owl">
+                            <vtex:contentPlaceHolder id="Destaques" />
+                        </div>
+                        
+                        <div class="showcase-default showcase-owl">
+                            <vtex:contentPlaceHolder id="Lançamentos" />   
+                        </div>
+
+                    </div><!-- #collections -->
+                
+                </article><!-- #main-content -->
+
+            </div><!-- .row -->
+        
+        </section><!-- #content -->
+                 
+         <!--  SubTemplate: Footer -->
+         <vtex:template id="CBYK-Sa-footer" />
+         <!-- /SubTemplate: Footer -->
+     
+     </div><!-- .container-fluid -->
+ 
+ </body>
+     <vtex:template id="CBYK-Sa-footer-Tags" />
+ </html>
+
+
+

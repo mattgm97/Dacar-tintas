@@ -1,0 +1,29 @@
+{
+    "version": 1.4,
+    "vtexAccountName": [
+        "dacartintas"
+    ],
+    "urlProduction": [
+        "dacartintas.vtexcommercestable.com.br/",
+        "dacartintas.com.br"
+    ],
+    "template": "Padrao",
+    "short": "pa",
+    "paths": {
+        "css": "./Web/CSS/",
+        "js": "./Web/JS/"
+    },
+    "js-plugins": {
+        "JS.jquery.slick.min.js": "https://raw.githubusercontent.com/kenwheeler/slick/master/slick/slick.min.js"
+    },
+    "outputFolder": {
+        "css": "Web/dist/css",
+        "js": "Web/dist/js"
+    },
+    "stylesFolders": [
+        "web/sass/"
+    ],
+    "jsFolders": [
+        "web/JS/"
+    ]
+}
