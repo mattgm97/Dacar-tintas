@@ -18,9 +18,9 @@
      <link href="/arquivos/ion.rangeSlider.skinHTML5.css" rel="stylesheet" type="text/css" />
      <script src="/arquivos/ion.rangeSlider.min.js"></script>
  
-     <vtex:template id="CBYK-Sa-Header-Tags" />
+     <vtex:template id="CBYKStyles" />
      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <link href="/arquivos/CSS.cbyk.sa.departament.css" rel="stylesheet" type="text/css" />
+     <link href="/arquivos/depto.css" rel="stylesheet" type="text/css" />
  </head>
  
  <body id="departament-page">
@@ -28,27 +28,29 @@
      <div class="page">
  
          <!--  SubTemplate: Header -->
-         <vtex:template id="CBYK-Sa-Header" />
+         <vtex:template id="CBYKheader" />
          <!-- /SubTemplate: Header -->
                      
          <div id="departament-extra-top"></div>
 
          <div class="container">
-             <div class="row">
-                 <div class="col-12">
-                    <div id="box-bread-brumb">
-                        <vtex.cmc:breadCrumb />
-                    </div>
-                 </div>
-                
-             </div>
-           
-      
+            <div class="title-category">
+                <!--  Controle: Titulo -->
+                <vtex.cmc:searchTitle />
+                <!-- /Controle: Titulo -->
+            </div><!-- .title-category -->
+            <div id="departament-banner">
+                    <!--  placeholder -->
+                    <vtex:contentPlaceHolder id="Banner-Principal" />
+                    <!-- /placeholder -->
+                </div><!-- #departament-banner -->
 
-               
+                <div class="cardorder">
+                    <vtex.cmc:shelforder />
+                </div>
      </div>
 
-     <div id="sidenavCTRfiltros" style="position: fixed;top: 50%;z-index: 1;background: #fff;
+     <div id="sidenavCTRfiltros" style="position: fixed;top: 50%;z-index: 2;background: #fff;
      opacity: .8;">
          <a  onclick="openNavfiltro()" id="open"><img src="/arquivos/filtro.svg" style="max-width: 50px;"/></a>
          <a  onclick="closeNavfiltro()" id="close"><img src="/arquivos/filtro.svg" style="max-width: 50px;"/></a>
@@ -61,7 +63,7 @@
  
              <div class="row">
  
-                 <aside class="col-3 sidebar"  id="mySidenavfiltros">
+                 <aside class="col-xs-3 sidebar"  id="mySidenavfiltros">
                      <div id="departament-navegador">
                          <h3 class="section-filter-title">FILTROS</h3>
                          <!--  Controle: navegador de departamento -->
@@ -73,25 +75,25 @@
                      </div><!-- #departament-navegador -->          	
                  </aside><!-- .sidebar -->
         
-                 <article id="main-content" class="col-12 col-md-9">
+                 <article id="main-content" class="col-xs-12 col-md-9">
                                                                      
-                    <div id="departament-banner">
-                        <!--  placeholder -->
-                        <vtex:contentPlaceHolder id="Banner-Principal" />
-                        <!-- /placeholder -->
-                    </div><!-- #departament-banner -->
+                     
                    
                          
                      <div id="collections">
                          
                          <div class="collection-wrap">
-                             <vtex.cmc:searchResult layout="f1c7b8fa-0dbc-46cf-8ff5-2ed2afad933d" itemCount="12"     columnCount="3" />
+                             <vtex.cmc:searchResult layout="ff139741-bd71-4409-97e5-1fe391d3b411" itemCount="12"     columnCount="4" />
                          </div>
                          
  
-                       
+                         <div class="showcase-default">
+                             <vtex:contentPlaceHolder id="Destaques" />
+                         </div>
                          
-                        
+                         <div class="showcase-default">
+                             <vtex:contentPlaceHolder id="Lançamentos" />   
+                         </div>
  
                      </div><!-- #collections -->
                  
@@ -104,28 +106,28 @@
          <div id="departament-extra-bottom"></div>
  
          <!--  SubTemplate: Footer -->
-         <vtex:template id="CBYK-Sa-footer" />
+         <vtex:template id="CBYKFooter" />
          <!-- /SubTemplate: Footer -->
      
      </div><!-- .container-fluid -->
  
  </body>
- <vtex:template id="CBYK-Sa-footer-Tags" />
-    
- <script src="/arquivos/JS.cbyk.Sa.filters.js"></script>
+ <vtex:template id="CBYKScripts" />
+     <script src="/arquivos/pagination.js"></script>
+ <script src="/arquivos/filters.js"></script>
      <script>
 
             $("#sidenavCTRfiltros #close").hide();
    
             function openNavfiltro() {
-                document.getElementById("mySidenavfiltros").style.left = "0px";
+                document.getElementById("mySidenavfiltros").style.right = "0px";
                 document.getElementById("sidenavCTRfiltros").style.left = "64%";
                 $("#sidenavCTRfiltros #open").hide();
                 $("#sidenavCTRfiltros #close").show();
             }
    
             function closeNavfiltro() {
-                document.getElementById("mySidenavfiltros").style.left = "-880px";
+                document.getElementById("mySidenavfiltros").style.right = "-880px";
                 document.getElementById("sidenavCTRfiltros").style.left = "0%";
                 $("#sidenavCTRfiltros #close").hide();
                 $("#sidenavCTRfiltros #open").show();
