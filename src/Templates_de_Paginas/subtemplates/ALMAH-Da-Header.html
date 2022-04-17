@@ -5,7 +5,7 @@
                 <div class="banner-top">
                     <!-- <vtex.cmc:bannertop /> -->
                     <div>
-                        <h5 style="text-align:center; color: white">Televendas (41) 9999-9999 | Compre pelo WhatsApp  (41) 99999-9999
+                        <h5 style="text-align:center; color:white;font-size: 15px;text-align: right;margin-top: 5px;margin-bottom: 5px;">Televendas (41) 9999-9999 | Compre pelo WhatsApp  (41) 99999-9999
                         </h5>
                     </div>
                 </div>
@@ -17,7 +17,7 @@
 <header class="header-container">
 
 
-    <div class="header" style="margin-bottom: -6px;padding: 0;margin-top: -10px;">
+    <div class="header" style="padding: 0;">
         <div class="container">
             <div class="row" id="headerrow">
 
@@ -85,13 +85,13 @@
                 </div>
                 <!-- .button-menu-xs -->
 
-                <div class="logo col-xs-6 col-sm-3 col-md-2 col-lg-2" id="special-icon">
+                <div class="logo col-6 col-sm-3 col-md-2 col-lg-3" id="special-icon">
                     <a href="/" title="STORE" class="link-logo">
                         <img src="/arquivos/logo.svg" alt="Logo" />
                     </a>
                 </div>
                 <!-- .logo -->
-                <div class="mini-cart mini-cart-xs text-right col-xs-3 visible-xs">
+                <div class="mini-cart mini-cart-xs text-right col-3 d-block d-sm-none d-flex align-items-center">
                    
                     <a title="Carrinho de Compras" onclick="openNav()" class="btn btn-default">
                         <img src="/arquivos/carrinho.svg" style="width: 28px;" />
@@ -101,20 +101,20 @@
                 </div>
                 <!-- .mini-cart-xs -->
 
-                <div class="search col-xs-12 col-sm-5 col-md-6 col-lg-4">
+                <div class="search col-12 col-sm-5 col-md-6 col-lg-6">
                     <vtex.cmc:fullTextSearchBox />
                 </div>
                 <!-- .search -->
 
-                <div class="sing-in col-xs-2 col-sm-3 col-md-3 col-lg-6 text-center">
+                <div class="sing-in col-2 col-sm-3 col-md-3 col-lg-3 text-center">
 
 
-                    <ul class="nav navbar-nav">
+                    <ul class="nav">
 
                       
                       
 
-                        <li class="hidden-sm hidden-md  hidden-xs" id="usuario-login">
+                        <li class="d-none d-lg-block d-xl-block" id="usuario-login">
                             <a href="/_secure/account#/orders" title="" class="btn btn-default btn-orders" style="display: flex;align-items: center;">
                                 <svg width="37" height="30" viewBox="0 0 37 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M31.3907 0.878906L35.1842 6.94922C37.1482 10.0898 35.4063 14.4492 31.7356 14.9414C31.4726 14.9766 31.2096 14.9941 30.9348 14.9941C29.2106 14.9941 27.6792 14.2324 26.6212 13.0547C25.5691 14.2324 24.0376 14.9941 22.3075 14.9941C20.5831 14.9941 19.0459 14.2324 17.9938 13.0547C16.9416 14.2324 15.4103 14.9941 13.6802 14.9941C11.9558 14.9941 10.4186 14.2324 9.36644 13.0547C8.31431 14.2324 6.78282 14.9941 5.05271 14.9941C4.78379 14.9941 4.51499 14.9766 4.25193 14.9414C0.592875 14.4434 -1.14309 10.084 0.815043 6.94922L4.6085 0.878906C4.94749 0.333984 5.54954 0 6.19248 0H29.8067C30.4497 0 31.0517 0.333984 31.3907 0.878906ZM29.2221 16.6523C29.7833 16.7871 30.362 16.875 30.9465 16.875C31.3031 16.875 31.6538 16.8516 32.0104 16.8047C32.3376 16.7637 32.6533 16.6875 32.9689 16.5938V28.125C32.9689 29.1621 32.133 30 31.0985 30H4.91246C3.87779 30 3.04197 29.1621 3.04197 28.125V16.5938C3.35179 16.6816 3.6732 16.7578 4.00059 16.8047C4.34544 16.8516 4.70201 16.875 5.05271 16.875C5.63719 16.875 6.21592 16.7812 6.77696 16.6523V22.5H29.2221V16.6523Z" fill="white"/>
@@ -219,10 +219,10 @@
     <div class="depto-nav-area">
         <div class="container">
             <div class="row">
-                <div class="deptos col-xs-12 col-sm-5 col-md-4 col-lg-12 hidden-xs hidden-sm hidden-md">
+                <div class="deptos col-xs-12 col-sm-5 col-md-4 col-lg-12  d-none d-md-none d-lg-block">
                     <ul>
-                        <li style="color: #ffffff;
-                        font-weight: 500;" id="allcatopeners"> <img src="/arquivos/menu.svg" alt="" /> Todas as Categorias </li>
+                        <li style="color: #ED1B34;
+                        font-weight: 500;" id="allcatopeners"> <img src="/arquivos/menu.svg" alt="" style="margin-top: -12px;" /> <span style="font-size: 20px;    font-weight: 700;">Todas as Categorias</span>  </li>
                         <li> <a href="/cavalete-de-sinalizacao">Categoria 1</a> </li>
                         <li> <a href="/combate-a-incendio">Categoria 2</a> </li>
                         <li> <a href="/condominios">Categoria 3</a> </li>
@@ -239,7 +239,7 @@
         </div>
     </div>
 
-    <nav class="visible-md visible-lg" id="top-menu">
+    <nav class="d-none d-md-block d-lg-block" id="top-menu">
         <div class="container">
             <div class="row" style="position: relative;" id="deptos-list">
                 <div class="deptonav" id="allcategories" style="display: none">

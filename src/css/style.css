@@ -164,9 +164,10 @@
            vertical-align: top;
          }
          .header .mini-cart span.badge{
-           background-color: #F00;
+           background-color: #B11D2F !important;
            vertical-align: top;
            position: absolute;
+           font-size: 12px;
            top: -9px;
            right: -24px;
          }
@@ -210,7 +211,8 @@
          
        }
          .header .search .fulltext-search-box{
-           color: #999999;
+           color: #515151;
+           height: 45px;
            background-color: #fff;
            display: inline-block;
            padding: 6px 12px;

@@ -1,5 +1,5 @@
 * {
-  font-family: "Roboto", sans-serif;
+  
 }
 
 @font-face {
@@ -119,9 +119,13 @@ body.menu-ativo:before {
 
 .header .search .busca {
   border: 1px solid #ffffff;
-  border-radius: 5px;
+  border-radius: 8px;
   background-color: white;
+  margin: auto;
+  width: 95%;
 }
+
+
 
 .fulltext-search-box {
   color: #4f4f4f !important;
@@ -225,32 +229,33 @@ body.menu-ativo:before {
 }
 
 .depto-nav-area {
-  background-color: #3a3637;
+  background-color: #FFFF;
   margin-top: 0.4em;
-  border-top: solid 1px #3a3637;
-  border-bottom: solid 1px #3a3637;
+  border-top: solid 1px #ffff;
+  border-bottom: solid 1px #fff;
 }
 
 .deptos ul {
   display: flex;
-  align-items: stretch;
+  align-items: center;
   justify-content: space-between;
   margin-top: 12px;
   margin-bottom: 12px;
+  padding-left: 0;
 }
 
 .deptos ul li a {
-  font-size: 13px;
+  font-size: 20px;
   line-height: 16px;
-  color: #fff;
-  font-weight: 400;
+  color: #515151;
+  font-weight: 600;
   text-decoration: none;
   text-transform: capitalize;
 }
 
 .deptos ul li a:hover {
   /*color: #025EB9;*/
-  font-weight: 600;
+  color: #ED1B34;
 }
 
 .deptonav {
@@ -267,11 +272,12 @@ body.menu-ativo:before {
 
 .firstLayer,
 .secondLayer {
-  background-color: #3a3637;
+  background-color: #FFF;
+  border-radius: 5px;
 }
 
 #deptos-list a {
-  color: #fff !important;
+  color: #515151 !important;
   font-size: 15px;
   font-weight: 400;
   text-decoration: none;
@@ -279,7 +285,8 @@ body.menu-ativo:before {
 }
 
 #deptos-list a:hover {
-  color: #fff !important;
+  color: #ED1B34 !important;
+  font-weight: bold;
 }
 
 #deptos-list a i {
@@ -638,6 +645,18 @@ body.menu-ativo:before {
   color: #4f4f4f !important;
 }
 
+.sing-in{
+  .nav{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    align-items: stretch;
+    justify-content: space-between;
+    list-style: none;
+  }
+}
+
 @media screen and (max-height: 450px) {
   .sidenavcart {
     padding-top: 15px;
@@ -737,6 +756,10 @@ body.menu-ativo:before {
 }
 
 @media screen and (min-width: 1200px) {
+
+  #usuario-cart{
+    margin-top: -6px;
+  }
 
     .modal-content.atendimento{
         width: 85%;
