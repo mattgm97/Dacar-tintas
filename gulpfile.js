@@ -3,13 +3,14 @@
 const { src, dest, watch, series, parallel } = require('gulp');
 // Importando todos os pacotes relacionados ao Gulp que queremos usar
 const sourcemaps = require('gulp-sourcemaps');
-const sass = require('gulp-sass');
+//const sass = require('gulp-sass');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 var replace = require('gulp-replace');
+const sass = require('gulp-sass')(require('sass'));
 
 // Caminhos de arquivo
 const files = { 
