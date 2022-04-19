@@ -6,77 +6,16 @@ docReady(function() {
     $('.product-carousel .prateleira.vitrine ul').find('.helperComplement').remove();
     $('.product-carousel-last .prateleira.vitrine ul').find('.helperComplement').remove();
 
-    $('.fullbanner').slick({
+    $('.segmentos ul').slick({
         infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        arrows: true,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                arrows: false,
-                dots: true
-            }
-        }]
-
-    });
-
-
-
-
-    $('.product-carousel .prateleira.vitrine ul').slick({
-        infinite: true,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        arrows: true,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                arrows: false
-            }
-        }]
-
-    });
-
-
-  /*  $('.product-carousel-side .prateleira.vitrine ul').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        arrows: false,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                arrows: false
-            }
-        }]
-
-    });*/
-
-
-
-    $('.cb-BannerMeio .row .col-12').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
+        slidesToShow: 6,
+        slidesToScroll: 6,
         autoplay: false,
-        autoplaySpeed: 3000,
-        arrows: false,
+        arrows: true,
+        dots: false,
         responsive: [{
             breakpoint: 768,
             settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
                 arrows: false,
                 dots: true
             }
@@ -84,151 +23,52 @@ docReady(function() {
 
     });
 
-    $('.cb-iconeMeio .row .col-12').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        arrows: false,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: false
-            }
-        }]
-
-    });
-
-   /* $('.cb-BannerFinal .row').slick({
-        infinite: true,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        autoplay: false,
-        autoplaySpeed: 3000,
-        arrows: false,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: false,
-                dots: true
-            }
-        }]
-
-    });*/
-    $('#homeCardsCarousel').slick({
-        infinite: true,
-        slidesToShow: 5,
-        slidesToScroll: 5,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        arrows: false,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: false
-            }
-        }]
-
-    });
-
-
-
-
-
-    $('#carouselbrands').slick({
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        arrows: true,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                arrows: false
-            }
-        }]
-
-    });
-
-
-    $('#novcategorias').slick({
-        infinite: true,
-        slidesToShow: 5,
-        slidesToScroll: 5,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        arrows: false,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                arrows: true
-            }
-        }]
-
-    });
-
-
-    $('#maincats').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        arrows: true,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: true
-            }
-        }]
-
-    });
-
-
-
-    $('#carouselpropostas').slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        arrows: false
-    });
-
-    $('#carouseldeptos').slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: true
-    });
 
 
 
 
     $(".slick-prev.slick-arrow").html(`
-<svg xmlns="http://www.w3.org/2000/svg" width="39.523" height="50.523" viewBox="0 0 39.523 50.523">
-  <path fill="none" stroke="rgb(255,199,1)" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="5" d="M27.76157527 11.76157527l-16 14 16 13"/>
-</svg>
+    <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#filter0_d_319_18)">
+    <ellipse cx="28.5" cy="24.5" rx="24.5" ry="24.5" transform="rotate(-180 28.5 24.5)" fill="white"/>
+    </g>
+    <path d="M34 12L22 24.5L34 37" stroke="#ED1B34" stroke-width="3"/>
+    <defs>
+    <filter id="filter0_d_319_18" x="0" y="0" width="57" height="57" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+    <feOffset dy="4"/>
+    <feGaussianBlur stdDeviation="2"/>
+    <feComposite in2="hardAlpha" operator="out"/>
+    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_319_18"/>
+    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_319_18" result="shape"/>
+    </filter>
+    </defs>
+    </svg>
+    
 
 `);
     $(".slick-next.slick-arrow").html(`
-<svg xmlns="http://www.w3.org/2000/svg" width="39.523" height="50.523" viewBox="0 0 39.523 50.523">
-  <path fill="none" stroke="rgb(255,199,1)" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="5" d="M11.7615601 38.76156629l16.00001574-13.99998203-15.9999854-13.00001797"/>
-</svg>
+    <svg width="58" height="57" viewBox="0 0 58 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#filter0_d_320_19)">
+    <ellipse cx="29.4102" cy="24.5" rx="24.5" ry="24.5" fill="white"/>
+    </g>
+    <path d="M23.9102 37L35.9102 24.5L23.9102 12" stroke="#ED1B34" stroke-width="3"/>
+    <defs>
+    <filter id="filter0_d_320_19" x="0.910156" y="0" width="57" height="57" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+    <feOffset dy="4"/>
+    <feGaussianBlur stdDeviation="2"/>
+    <feComposite in2="hardAlpha" operator="out"/>
+    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_320_19"/>
+    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_320_19" result="shape"/>
+    </filter>
+    </defs>
+    </svg>
+    
 
 `);
 

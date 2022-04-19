@@ -3,188 +3,175 @@
     xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
 
 <head>
-    <title>Home | Mercado Santé</title>
+    <title>Home | Dacar</title>
     <vtex:metaTags />
-    <vtex:template id="CBYK-Sa-Header-Tags" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <vtex:template id="dacar-loads-header" />
     <link href="/arquivos/CSS.cbyk.Sa.home.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body id="home-page">
 
-    <div class="page">
-
-        <!--  SubTemplate: Header -->
-        <vtex:template id="CBYK-Sa-Header" />
+  <!--  SubTemplate: Header -->
+        <vtex:template id="Header" />
         <!-- /SubTemplate: Header -->
 
-        <div id="home-extra-top"></div>
+        <main class="home">
 
-        <section class="container-fluid">
+            <section class="main-gallery">
 
-            <div class="fullbanner d-none d-sm-block">
-                <vtex:contentPlaceHolder id="bannersegmentado" />
-            </div><!-- .fullbanner -->
-            <div class="fullbanner d-block d-sm-none">
-                <vtex:contentPlaceHolder id="bannersegmentadomob" />
-            </div><!-- .fullbanner -->
-        </section>
+				<div class="desktop">
+					<vtex:contentPlaceHolder id="slide-principal" type="banner" />
+				</div>
+				<div class="mobile">
+					<vtex:contentPlaceHolder id="slide-principal-mobile" type="banner" />
+				</div>
 
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="product-carousel">
-                            <vtex:contentPlaceHolder id="Novidades" />
-                        </div>
-                    </div>
+			</section>
+    
+            <section class="tipbar">
+
+                <div class="tipbar__frete">
+                    <ul>
+                        <li><vtex:contentPlaceHolder id="tipbarJuros" type="banner" /></li>
+                        <li><vtex:contentPlaceHolder id="tipbarFrete" type="banner" /></li>
+                        <li><vtex:contentPlaceHolder id="tipbarPertinho" type="banner" /></li>
+                        <li><vtex:contentPlaceHolder id="tipbarWhats" type="banner" /></li>
+                    </ul>
                 </div>
 
+            </section>
 
-            </div>
-        </section>
+            <section class="bannertintas">
 
-
-
-
-        <section id="home-content" class="cb-home-banner">
-            <div class="container cb-BannerMeio">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="banner" style="padding: 10px">
-                            <vtex:contentPlaceHolder id="banner1" />
-                        </div>
-                        <div class="banner" style="padding: 10px">
-                            <vtex:contentPlaceHolder id="banner2" />
-                        </div>
-                        <div class="banner" style="padding: 10px">
-                            <vtex:contentPlaceHolder id="banner3" />
-                        </div>
-                    </div>
-
+                <div class="container bannertintas__dacar">
+                    <ul>
+                        <li><vtex:contentPlaceHolder id="bannerTintas01" type="banner" /></li>
+                        <li><vtex:contentPlaceHolder id="bannerTintas02" type="banner" /></li>
+                    </ul>
                 </div>
 
-            </div>
-        </section>
+            </section>
 
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="product-carousel">
-                            <vtex:contentPlaceHolder id="hortifruti" />
-                        </div>
-                    </div>
+            <section class="ColecaoRelampago">
+
+                <div class="container ofertaRelampago">
+                    <vtex:contentPlaceHolder id="banneOferta" type="banner" />
+                </div>
+                
+                <div class="container ColecaoRelampago__dacar">
+                    <vtex:contentPlaceHolder  id="titulo-1" type="html" />
+                    <vtex:contentPlaceHolder  id="prateleira-padrao-1" type="colecao" />
                 </div>
 
+            </section>
 
-            </div>
-        </section>
+            <section class="lancamentos">
 
-
-        <section id="home-content" class="cb-home-icone">
-            <div class="container cb-iconeMeio">
-                <div class="row">
-                    <div class="col-12">
-                        <div class=" icone">
-                            <img src="/arquivos/123.png" alt="" />
-                            <p><img src="/arquivos/N_01.png" alt="" class="imgIcone" />
-                                ESCOLHA O PLANO</p>
-                            <span>Escolha o tipo de cesta que mais combina com a sua casa: frutas, mix Santé (frutas +
-                                verduras + legumes), mix de minis e orgânicos.</span>
-                        </div>
-                        <div class=" icone">
-                            <img src="/arquivos/mala.png" alt="" />
-                            <p><img src="/arquivos/N_02.png" alt="" class="imgIcone" />
-                                ESCOLHA SUA CESTA</p>
-                            <span>Em seguida escolha o tamanho: Pequena, Média e Grande. (Escolha de tamanho somente nas
-                                cestas mix Santé e frutas).</span>
-                        </div>
-                        <div class="icone">
-                            <img src="/arquivos/persona.png" alt="" />
-                            <p><img src="/arquivos/N_03.png" alt="" class="imgIcone" />
-                                PERSONALIZE</p>
-                            <span>Você pode também acrescentar o que quiser na sua cesta! (Valores podem variar de
-                                acordo com os produtos selecionados)</span>
-                        </div>
-                    </div>
-
+                <div class="container Colecaolancamento">
+                    <vtex:contentPlaceHolder  id="titulo-2" type="html" />
+                    <vtex:contentPlaceHolder  id="prateleira-padrao-2" type="colecao" />
                 </div>
 
-            </div>
-        </section>
+            </section>
 
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="product-carousel">
-                            <vtex:contentPlaceHolder id="mercearia" />
-                        </div>
-                    </div>
+            <section class="container segmentos">
+                <vtex:contentPlaceHolder  id="titulo-3" type="html" />
+                <ul>
+                    <li><vtex:contentPlaceHolder id="segmento01" type="banner" /></li>
+                    <li><vtex:contentPlaceHolder id="segmento02" type="banner" /></li>
+                    <li><vtex:contentPlaceHolder id="segmento03" type="banner" /></li>
+                    <li><vtex:contentPlaceHolder id="segmento05" type="banner" /></li>
+                    <li><vtex:contentPlaceHolder id="segmento06" type="banner" /></li>
+                    <li><vtex:contentPlaceHolder id="segmento07" type="banner" /></li>
+                    <li><vtex:contentPlaceHolder id="segmento08" type="banner" /></li>
+                    <li><vtex:contentPlaceHolder id="segmento09" type="banner" /></li>
+                    <li><vtex:contentPlaceHolder id="segmento10" type="banner" /></li>
+                    <li><vtex:contentPlaceHolder id="segmento11" type="banner" /></li>
+                    <li><vtex:contentPlaceHolder id="segmento12" type="banner" /></li>
+                </ul>
+
+            </section>
+
+
+           <section class="MaisBuscados">
+
+                <div class="container MaisBuscados__colecao">
+                    <vtex:contentPlaceHolder  id="titulo-4" type="html" />
+                    <vtex:contentPlaceHolder  id="prateleira-padrao-3" type="colecao" />
                 </div>
 
+            </section>
 
-            </div>
-        </section>
-
-        <section id="home-content" class="cb-home-bannerFinal">
-            <div class="container cb-BannerFinal">
-                <div class="row">
-                    <!--  <div class="col-md-6 bannerFinal">
-                <vtex:contentPlaceHolder id="bannerOrg" />
-            </div>
-            <div class="col-md-6 bannerFinal">
-             <vtex:contentPlaceHolder id="bannerAli" />-->
-                    <div class="col-md-12 bannerFinal">
-                        <vtex:contentPlaceHolder id="bannerSingle" />
-                    </div>
+            <section class="bannertintas03">
+                <div class="container bannertintas03__dacar">
+                    <vtex:contentPlaceHolder id="bannerTintasDacar" type="banner" />
                 </div>
 
-            </div>
-        </section>
-
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="product-carousel">
-                            <vtex:contentPlaceHolder id="Lançamentos" />
-                        </div>
-                    </div>
+                <div class="container bannertintas__dacar02">
+                    <ul>
+                        <li><vtex:contentPlaceHolder id="bannerTintasDacar01" type="banner" /></li>
+                        <li><vtex:contentPlaceHolder id="bannerTintasDacar02" type="banner" /></li>
+                    </ul>
                 </div>
 
-            </div>
-        </section>
+            </section>
 
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h2 class="siganos">SIGA-NOS</h2>
+            <section class="PensandoEmVoce">
 
-
-                        <!-- LightWidget WIDGET -->
-                        <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe
-                            src="https://cdn.lightwidget.com/widgets/354b1f08f01852b99cd3300eb2f5e7ec.html"
-                            scrolling="no" allowtransparency="true" class="lightwidget-widget"
-                            style="width:100%;border:0;overflow:hidden;"></iframe>
-                    </div>
+                <div class="container PensandoEmVoce__colecao">
+                    <vtex:contentPlaceHolder  id="titulo-5" type="html" />
+                    <vtex:contentPlaceHolder  id="prateleira-padrao-4" type="colecao" />
                 </div>
-            </div>
-        </section>
+
+            </section>
+
+            <section class="AreaBlog">
+                <vtex:contentPlaceHolder  id="titulo-6" type="html" />
+                
+                <div class="container AreaBlog__conteudo">
+                    <ul>
+                        <li><vtex:contentPlaceHolder id="AreaBlog01" type="html" /></li>
+                        <li><vtex:contentPlaceHolder id="AreaBlog02" type="html" /></li>
+                        <li><vtex:contentPlaceHolder id="AreaBlog03" type="html" /></li>
+                        <li><vtex:contentPlaceHolder id="AreaBlog04" type="html" /></li>
+                        <li><vtex:contentPlaceHolder id="AreaBlog05" type="html" /></li>
+                        <li><vtex:contentPlaceHolder id="AreaBlog06" type="html" /></li>
+                    </ul>
+                </div>
+
+            </section>
 
 
+            <section class="NossasTintas">
+                <vtex:contentPlaceHolder  id="titulo-7" type="html" />
+                
+                <div class="container NossasTintas__conteudo">
+                    <ul>
+                        <li><vtex:contentPlaceHolder id="NossasTintas01" type="html" /></li>
+                        <li><vtex:contentPlaceHolder id="NossasTintas02" type="html" /></li>
+                        <li><vtex:contentPlaceHolder id="NossasTintas03" type="html" /></li>
+                        <li><vtex:contentPlaceHolder id="NossasTintas04" type="html" /></li>
+                        <li><vtex:contentPlaceHolder id="NossasTintas05" type="html" /></li>
+                        <li><vtex:contentPlaceHolder id="NossasTintas06" type="html" /></li>
+                        <li><vtex:contentPlaceHolder id="NossasTintas07" type="html" /></li>
+                        <li><vtex:contentPlaceHolder id="NossasTintas08" type="html" /></li>
+                    </ul>
+                </div>
 
-        <div id="category-extra-bottom"></div>
+            </section>
+
+        </main>
+
 
         <!--  SubTemplate: Footer -->
-        <vtex:template id="CBYK-Sa-footer" />
+        <vtex:template id="dacar-footer-links" />
+		<vtex:template id="dacar-footer" />
         <!-- /SubTemplate: Footer -->
 
-    </div><!-- .container-fluid -->
-
+   
 </body>
-<vtex:template id="CBYK-Sa-footer-Tags" />
+
+<vtex:template id="dacar-loads-footer" />
 
 </html>
