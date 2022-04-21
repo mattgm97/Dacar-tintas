@@ -167,9 +167,11 @@
            background-color: #B11D2F !important;
            vertical-align: top;
            position: absolute;
+           padding: 3px 6px;
            font-size: 12px;
-           top: -9px;
-           right: -24px;
+           border-radius: 100%;
+           top: 0px;
+           right: -6px;
          }
          #mini-cart-admake{ background-color: #fff; border: 1px solid #ccc; border-radius: 4px; box-shadow: 0 -5px 15px #D0D0D0; display: none; position: absolute; top: 34px; right: 15px; width: 320px; z-index: 9999; } 
          .col-mini-cart:hover #mini-cart-admake{ display: block ! important; } 
@@ -2081,9 +2083,8 @@
    }
    .header .mini-cart span.badge{
     position: absolute;
-    top: 2px;
-    right: -12px;
-    padding: 2px 5px;
+    top: 0px;
+    right: -6px;
    }
  
    .product-image .apresentacao{
