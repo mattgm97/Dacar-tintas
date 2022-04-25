@@ -216,16 +216,16 @@
   }
   
   .resultado-busca-filtro > fieldset select {
-    color: #D8742F !important;
-    background-color: #F2F2F2;
-    font-size: 22px;
+    color: #4F4F4F !important;
+    font-size: 15px;
     font-weight: bold;
+    width: 100%;
     appearance: none;
     border-radius: 10px !important;
     text-transform: uppercase;
     height: 46px;
     border: 1px solid #fff!important;
-    font-family: "ChaletComprime-CologneEighty";
+    font-family: 'switzerland';
     letter-spacing: 2px;
   }
   
@@ -359,6 +359,19 @@
       display: none;
     }
   }
+
+
+  #filters-btn {
+    width: 50%;
+    text-align: right;
+    span{
+      font-family: 'switzerland';
+      font-weight: bold;
+      text-transform: uppercase;
+      color:#4F4F4F;
+      font-size: 15px;
+    }
+  }
   
   @media screen and (max-width: 1900px) {
     .box-banner a img {
@@ -380,7 +393,7 @@
     }
   
     #mySidenavfiltros {
-      z-index: 999;
+      z-index: 5;
       top: 0;
       left: -880px;
       overflow-x: hidden;

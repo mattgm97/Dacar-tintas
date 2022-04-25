@@ -404,7 +404,7 @@
        bottom: 0;
        width: 100%;
        height: 100%;
-       z-index: 9999999;
+       z-index: 1;
      }
        #menu-mobile .header-menu-mobile{
          display: block;
@@ -1342,11 +1342,11 @@
    .resultado-busca-filtro > fieldset{
      display: inline-block;
      vertical-align: top;
+     width: 50%;
      color: #333;
      font-size: 13px;
      font-weight: 300;
      line-height: 30px;
-     margin-right: 30px;
    }
      .resultado-busca-filtro > fieldset select{
        border: 1px solid #ccc;

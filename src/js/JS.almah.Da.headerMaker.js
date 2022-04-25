@@ -61,7 +61,7 @@ $(document).ready(function () {
 
 
                     //mobile
-                    $(".sidenav").append(`<div style="display:block;border-top: solid 1px #333;"><span class="depto-${element.name}"><a href="${element.url}">${divtext}<i class="fa fa-angle-right"></i></a></span><button class="dropdown-btn" id="${element.name}"><i class="fa fa-angle-down"></i></button></div>
+                    $(".sidenav").append(`<div style="display:block;border-top: solid 1px #333;"><span class="depto-${element.name}"><a href="${element.url}">${divtext}</a></span><button class="dropdown-btn" id="${element.name}"><i class="fa fa-angle-down"></i></button></div>
              <div class="dropdown-container" id="${element.name}"></div>`);
 
 
@@ -97,16 +97,18 @@ $(document).ready(function () {
                         let divtextsub = subs.name;
                         subs.name = subs.name.replace(/[\s/,&]+/g, '-');
                         //desktop
-                        $(`.secondLayer-${element.name}  ul`).append(`<li  class="item-${element.name}-${subs.name}"><a href="${subs.url}">${divtextsub}</a></li>`);
 
                         if (!subs.hasChildren) {
                             $(`.dropdown-container#${element.name}`).append(`<div style="display:block;border-top: solid 1px #333;"><span class="depto-${element.name}"><a href="${subs.url}">${divtextsub}</a></span></div>`);
+
                             $(`.depto-${element.name} .row .col-sm-4.firstLayer-${element.name}  ul .item-${element.name}-${subs.name}`).mouseenter(function () {
                                 // $(`.depto-${element.name} .row .col-sm-4.secondLayer`).hide()
                                 $(`.depto-${element.name} .row .col-sm-4.secondLayer`).hide();
                                 $(".thirdLayer").hide();
                             });
                         } else {
+                            $(`.secondLayer-${element.name}  ul`).append(`<li  class="item-${element.name}-${subs.name}"><a href="${subs.url}">${divtextsub}<i class="fa fa-angle-right"></i></a></li>`);
+
                             $(".deptonav").append(`
                     
                             <div class="col-sm-4 thirdLayer thirdLayer-${element.name}-${subs.name} " id="${element.name}-${subs.name}">
@@ -115,14 +117,14 @@ $(document).ready(function () {
                         </div>
                         `);
                             //mobile
-                            $(".sidenav").append(`<div style="display:block;border-top: solid 1px #333;"><span class="depto-${subs.name}"><a href="${subs.url}">${divtextsub}</a></span><button class="dropdown-btn" id="${element.name}"><i class="fa fa-angle-down"></i></button></div>
-                    <div class="dropdown-container" id="${subs.name}"></div>`);
+                            $(`.dropdown-container#${element.name}`).append(`<div style="display:block;border-top: solid 1px #333;"><span class="depto-${element.name}-${subs.name}"><a href="${subs.url}">${divtextsub}</a></span><button class="dropdown-btn" id="${element.name}-${subs.name}"><i class="fa fa-angle-down"></i></button></div>
+                    <div class="dropdown-container" id="${element.name}-${subs.name}"></div>`);
 
 
 
                             //Desktop
                             $(`.item-${element.name}-${subs.name}`).mouseenter(function () {
-                               
+
                                 $(".thirdLayer").hide();
                                 $(`.thirdLayer-${element.name}-${subs.name}#${element.name}-${subs.name}`).show()
                             });
@@ -135,14 +137,14 @@ $(document).ready(function () {
 
 
                             //Mobile
-                            $(`.dropdown-btn#${subs.name}`).toggle(() => {
+                            $(`.dropdown-btn#${element.name}-${subs.name}`).toggle(() => {
                                 // $(".dropdown-container").slideUp();
                                 $(`.dropdown-btn i`).attr('class', 'fa fa-angle-down');
-                                $(`.dropdown-btn#${subs.name} i`).attr('class', 'fa fa-angle-up');
-                                $(`.dropdown-container#${subs.name}`).slideDown()
+                                $(`.dropdown-btn#${element.name}-${subs.name} i`).attr('class', 'fa fa-angle-up');
+                                $(`.dropdown-container#${element.name}-${subs.name}`).slideDown()
                             }, () => {
-                                $(`.dropdown-container#${subs.name}`).slideUp()
-                                $(`.dropdown-btn#${subs.name} i`).attr('class', 'fa fa-angle-down');
+                                $(`.dropdown-container#${element.name}-${subs.name}`).slideUp()
+                                $(`.dropdown-btn#${element.name}-${subs.name} i`).attr('class', 'fa fa-angle-down');
                             })
 
                             subs.children.sort((a, b) => a.name.localeCompare(b.name, 'pt', { ignorePunctuation: true }));
@@ -154,7 +156,7 @@ $(document).ready(function () {
                                 //desktop
                                 $(`.thirdLayer-${element.name}-${subs.name}  ul`).append(`<li  class="item-${grandsubs.name}"><a href="${grandsubs.url}">${divtextgrandsub}</a></li>`);
 
-                             
+
                             })
                         }
 
