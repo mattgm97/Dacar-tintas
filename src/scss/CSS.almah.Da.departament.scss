@@ -125,7 +125,7 @@
   }
   
   .navigation-tabs {
-    border: 1px solid rgb(189, 189, 189);
+   
     padding: 20px;
     border-top: none;
     background: none !important;
@@ -133,6 +133,8 @@
   }
   
   .section-filter-title {
+
+    display: none;
     color: #fff;
     text-align: center;
     background-color: #D8742F;
@@ -157,7 +159,10 @@
   
   .titulo-sessao {
     font-size: 30px !important;
-    color: #333 !important;
+    color: #515151 !important;
+    font-family: 'switzerland';
+    font-weight: bold;
+    text-transform: uppercase;
   }
   
   .bread-crumb {
@@ -230,7 +235,7 @@
   }
   
   .resultado-busca-filtro {
-    /*background-color: #FCFCFC;*/
+    display: none !important;
     margin-top: 1em;
   }
   
@@ -240,10 +245,12 @@
     display: inline-block;
     border-radius: 9px;
     font-size: 20px;
-    color: white;
-    background-color: #D8742F !important;
+    color: #ED1B34;
+    border: 3px solid #ED1B34;
+    background-color: white !important;
     text-align: center;
     width: 362px;
+    font-family: 'switzerland';
     font-weight: 700;
     margin-top: 3em;
     margin-bottom: 2em;
@@ -328,7 +335,7 @@
   }
   
   .search-single-navigator {
-    display: block !important;
+    display: none !important;
     margin-top: 2em;
   
     h3, .productClusterSearchableIds, h5, .Variação, .Modelo {
@@ -392,6 +399,13 @@
   
     #admake-advanced-filter {
       display: none !important;
+    }
+
+    .resultado-busca-filtro{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 15px;
     }
   }
   

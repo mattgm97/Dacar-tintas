@@ -43,7 +43,7 @@ if ("function" !== typeof (String.prototype.trim)) String.prototype.trim = funct
 			// Opção para fazer a paginação manualmente, uma nova página só é chamada quando executado o comando dentro desta função. Útil para ter um botão "Mostrar mais produtos"
 			// Ela recebe como parâmetro: 1 função que chama a próxima página (caso ela exista)
 			paginate: function() {
-				$(".vitrine.resultItemsWrapper").append("<div class='carregar-prox-pg'>VEJA MAIS PRODUTOS</div>");
+				$(".vitrine.resultItemsWrapper").append("<div class='carregar-prox-pg'>VER MAIS</div>");
 				$(".carregar-prox-pg").click(()=>{
 					if (!$public.currentStatus)
 					return;

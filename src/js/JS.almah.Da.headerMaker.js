@@ -11,13 +11,13 @@ function verifyUserIsLogged() {
             if (profile.IsUserDefined) {
                 console.log(profile)
                 const userName = profile.FirstName !== null ? profile.FirstName : profile.Email.split('@')[0]
-              /*  $('body').find('.header__user .dropdown-toggle span').replaceWith(`
-            <span> Olá, <strong> ${userName} </strong>  </span>
-            `)*/
+                /*  $('body').find('.header__user .dropdown-toggle span').replaceWith(`
+              <span> Olá, <strong> ${userName} </strong>  </span>
+              `)*/
 
-            $("#usuario-login a .header-spam-title").text(`Olá, ${userName}`);
-            
-            $(".link-orders a .header-spam-title").text(`Olá, ${userName}`);
+                $("#usuario-login a .header-spam-title").text(`Olá, ${userName}`);
+
+                $(".link-orders a .header-spam-title").text(`Olá, ${userName}`);
 
             }
 
@@ -52,7 +52,7 @@ $(document).ready(function () {
                 if (element.hasChildren) {
                     $(".deptonav").append(`
                     
-                    <div class="col-sm-8 secondLayer secondLayer-${element.name} " id="${element.name}">
+                    <div class="col-sm-4 secondLayer secondLayer-${element.name} " id="${element.name}">
                     <ul class="">
                      </ul>
                 </div>
@@ -104,16 +104,80 @@ $(document).ready(function () {
                                 // $(`.depto-${element.name} .row .col-sm-4.secondLayer`).hide()
                                 $(`.depto-${element.name} .row .col-sm-4.secondLayer`).hide();
                             });
-                        }
+                        } else
+                            $(".deptonav").append(`
+                    
+                            <div class="col-sm-4 thirdLayer thirdLayer-${subs.name} " id="${subs.name}">
+                            <ul class="">
+                             </ul>
+                        </div>
+                        `);
+                            //mobile
+                            $(".sidenav").append(`<div style="display:block;border-top: solid 1px #333;"><span class="depto-${subs.name}"><a href="${subs.url}">${divtextsub}</a></span><button class="dropdown-btn" id="${element.name}"><i class="fa fa-angle-down"></i></button></div>
+                    <div class="dropdown-container" id="${subs.name}"></div>`);
 
-                        //mobile
 
-                    })
+
+                            //Desktop
+                            $(`.item-${subs.name}`).mouseenter(function () {
+                                $(".thirdLayer").hide();
+                                $(`.thirdLayer-${subs.name}#${subs.name}`).show()
+                            });
+
+                            /*  $(`#deptos-list .depto-${element.name}#${element.name}`).mouseleave(function () {
+                                  $(`#deptos-list .depto-${element.name}#${element.name}`).hide()
+                                  $(`#deptos-list .deptonav .row .secondLayer`).hide();
+                                  $(`#deptos-list .deptonav .row .thirdLayer`).hide();
+                              });*/
+
+
+                            //Mobile
+                            $(`.dropdown-btn#${subs.name}`).toggle(() => {
+                                // $(".dropdown-container").slideUp();
+                                $(`.dropdown-btn i`).attr('class', 'fa fa-angle-down');
+                                $(`.dropdown-btn#${subs.name} i`).attr('class', 'fa fa-angle-up');
+                                $(`.dropdown-container#${subs.name}`).slideDown()
+                            }, () => {
+                                $(`.dropdown-container#${subs.name}`).slideUp()
+                                $(`.dropdown-btn#${subs.name} i`).attr('class', 'fa fa-angle-down');
+                            })
+
+                            subs.children.sort((a, b) => a.name.localeCompare(b.name, 'pt', { ignorePunctuation: true }));
+                            subs.children.forEach((grandsubs, index) => {
+                                //  console.log("adding children");
+                                //  console.log(subs)
+                                let divtextgrandsub = grandsubs.name;
+                                grandsubs.name = grandsubs.name.replace(/[\s/,&]+/g, '-');
+                                //desktop
+                                $(`.thirdLayer-${subs.name}  ul`).append(`<li  class="item-${grandsubs.name}"><a href="${grandsubs.url}">${divtextgrandsub}</a></li>`);
+        
+                                if (!subs.hasChildren) {
+                                    $(`.dropdown-container#${sub.name}`).append(`<div style="display:block;border-top: solid 1px #333;"><span class="depto-${subs.name}"><a href="${grandsubs.url}">${divtextgrandsub}</a></span></div>`);
+                                    $(`.depto-${subs.name} .row .col-sm-4.secondLayer-${subs.name}  ul .item-${grandsubs.name}`).mouseenter(function () {
+                                        // $(`.depto-${element.name} .row .col-sm-4.secondLayer`).hide()
+                                        $(`.depto-${subs.name} .row .col-sm-4.thirdLayer`).hide();
+                                    });
+                                }
+                            })
+
+
+
+
+
+
+
+                        })
+
+
+
+
+
+                    }
 
                     //Desktop
 
 
-                } else {
+                 else {
                     //$(".sidenav").append(`<span class="depto-${element.name}"><a href="${element.url}">${divtext}</a></span>`)
                     //Desktop
                     $(`.depto-${element.name}`).mouseenter(function () {
@@ -128,7 +192,7 @@ $(document).ready(function () {
 
     $("#allcatopeners").mouseenter(function () {
         $("#allcategories").show();
-        $("body").addClass("menu-ativo");
+        
 
     });
 
