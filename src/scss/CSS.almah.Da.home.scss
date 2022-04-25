@@ -41,16 +41,70 @@
     }
 
     .segmentos{
+        button.slick-prev.slick-arrow{
+            margin-left: 33px !important;
+        }
+        h3{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 19px;
+            color: #26231E;
+            padding-top: 2em;
+        }
         ul{
             li{
                 padding: 25px;
-                .slick-prev.slick-arrow {
-                    margin-left: 33px;
-                }
                img{
                    height: 200px;
                }
             }
         }
     }
+    .bannertintas03{
+        .container{
+            display: flex;
+            .bannertintas03__dacar{
+                justify-content: end;
+                img{
+                    width: 570px;
+                    height: auto;
+                }
+            }
+            .bannertintas__dacar02{
+                ul{
+                    li{
+                        img{
+                            width: 500px;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .NossasTintas{
+        .NossasTintas__conteudo {
+            h3{
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 19px;
+                color: #26231e;
+                padding-top: 2em;
+            }
+            button.slick-prev.slick-arrow{
+                margin-left: 33px !important;
+            }
+          
+            ul{
+                li{
+                    padding: 18px;
+                }
+            }
+    
+        }
+    }
+
+    
 }

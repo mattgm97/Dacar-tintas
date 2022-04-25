@@ -7,13 +7,13 @@
     <vtex:metaTags />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <vtex:template id="dacar-loads-header" />
-    <link href="/arquivos/CSS.cbyk.Sa.home.css" rel="stylesheet" type="text/css" />
+    <link href="/arquivos/CSS.almah.Da.home.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body id="home-page">
 
   <!--  SubTemplate: Header -->
-        <vtex:template id="Header" />
+        <vtex:template id="ALMAH-Da-Header" />
         <!-- /SubTemplate: Header -->
 
         <main class="home">
@@ -92,7 +92,15 @@
                 </ul>
 
             </section>
+            <section class="AreaCliente">
+                <ul>
+                    <li><vtex:contentPlaceHolder id="AreaCliente01"  /></li>
+                    <li><vtex:contentPlaceHolder id="AreaCliente02"  /></li>
+                    <li><vtex:contentPlaceHolder id="AreaCliente03"  /></li>
+                </ul>
+                
 
+            </section>
 
            <section class="MaisBuscados">
 
@@ -104,15 +112,17 @@
             </section>
 
             <section class="bannertintas03">
-                <div class="container bannertintas03__dacar">
-                    <vtex:contentPlaceHolder id="bannerTintasDacar" type="banner" />
-                </div>
-
-                <div class="container bannertintas__dacar02">
-                    <ul>
-                        <li><vtex:contentPlaceHolder id="bannerTintasDacar01" type="banner" /></li>
-                        <li><vtex:contentPlaceHolder id="bannerTintasDacar02" type="banner" /></li>
-                    </ul>
+                <div class="container">
+                    <div class="container bannertintas03__dacar">
+                        <vtex:contentPlaceHolder id="bannerTintasDacar" type="banner" />
+                    </div>
+    
+                    <div class="container bannertintas__dacar02">
+                        <ul>
+                            <li><vtex:contentPlaceHolder id="bannerTintasDacar01" type="banner" /></li>
+                            <li><vtex:contentPlaceHolder id="bannerTintasDacar02" type="banner" /></li>
+                        </ul>
+                    </div>
                 </div>
 
             </section>
@@ -144,9 +154,9 @@
 
 
             <section class="NossasTintas">
-                <vtex:contentPlaceHolder  id="titulo-7" type="html" />
-                
+             
                 <div class="container NossasTintas__conteudo">
+                    <vtex:contentPlaceHolder  id="titulo-7" type="html" />
                     <ul>
                         <li><vtex:contentPlaceHolder id="NossasTintas01" type="html" /></li>
                         <li><vtex:contentPlaceHolder id="NossasTintas02" type="html" /></li>
@@ -175,3 +185,9 @@
 <vtex:template id="dacar-loads-footer" />
 
 </html>
+
+
+<img src="/arquivos/TintasBlog.png" alt="">
+<h3>Ler Post Completo</h3>
+<p>Ler Post Completo</p>
+<button>Ler Post Completo</button>
