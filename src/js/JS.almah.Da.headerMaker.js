@@ -61,13 +61,14 @@ $(document).ready(function () {
 
 
                     //mobile
-                    $(".sidenav").append(`<div style="display:block;border-top: solid 1px #333;"><span class="depto-${element.name}"><a href="${element.url}">${divtext}</a></span><button class="dropdown-btn" id="${element.name}"><i class="fa fa-angle-down"></i></button></div>
+                    $(".sidenav").append(`<div style="display:block;border-top: solid 1px #333;"><span class="depto-${element.name}"><a href="${element.url}">${divtext}<i class="fa fa-angle-right"></i></a></span><button class="dropdown-btn" id="${element.name}"><i class="fa fa-angle-down"></i></button></div>
              <div class="dropdown-container" id="${element.name}"></div>`);
 
 
                     //Desktop
                     $(`.depto-${element.name}`).mouseenter(function () {
                         $(".secondLayer").hide();
+                        $(".thirdLayer").hide();
                         $(`.secondLayer-${element.name}#${element.name}`).show()
                     });
 
@@ -96,18 +97,19 @@ $(document).ready(function () {
                         let divtextsub = subs.name;
                         subs.name = subs.name.replace(/[\s/,&]+/g, '-');
                         //desktop
-                        $(`.secondLayer-${element.name}  ul`).append(`<li  class="item-${subs.name}"><a href="${subs.url}">${divtextsub}</a></li>`);
+                        $(`.secondLayer-${element.name}  ul`).append(`<li  class="item-${element.name}-${subs.name}"><a href="${subs.url}">${divtextsub}</a></li>`);
 
                         if (!subs.hasChildren) {
                             $(`.dropdown-container#${element.name}`).append(`<div style="display:block;border-top: solid 1px #333;"><span class="depto-${element.name}"><a href="${subs.url}">${divtextsub}</a></span></div>`);
-                            $(`.depto-${element.name} .row .col-sm-4.firstLayer-${element.name}  ul .item-${subs.name}`).mouseenter(function () {
+                            $(`.depto-${element.name} .row .col-sm-4.firstLayer-${element.name}  ul .item-${element.name}-${subs.name}`).mouseenter(function () {
                                 // $(`.depto-${element.name} .row .col-sm-4.secondLayer`).hide()
                                 $(`.depto-${element.name} .row .col-sm-4.secondLayer`).hide();
+                                $(".thirdLayer").hide();
                             });
-                        } else
+                        } else {
                             $(".deptonav").append(`
                     
-                            <div class="col-sm-4 thirdLayer thirdLayer-${subs.name} " id="${subs.name}">
+                            <div class="col-sm-4 thirdLayer thirdLayer-${element.name}-${subs.name} " id="${element.name}-${subs.name}">
                             <ul class="">
                              </ul>
                         </div>
@@ -119,9 +121,10 @@ $(document).ready(function () {
 
 
                             //Desktop
-                            $(`.item-${subs.name}`).mouseenter(function () {
+                            $(`.item-${element.name}-${subs.name}`).mouseenter(function () {
+                               
                                 $(".thirdLayer").hide();
-                                $(`.thirdLayer-${subs.name}#${subs.name}`).show()
+                                $(`.thirdLayer-${element.name}-${subs.name}#${element.name}-${subs.name}`).show()
                             });
 
                             /*  $(`#deptos-list .depto-${element.name}#${element.name}`).mouseleave(function () {
@@ -149,35 +152,29 @@ $(document).ready(function () {
                                 let divtextgrandsub = grandsubs.name;
                                 grandsubs.name = grandsubs.name.replace(/[\s/,&]+/g, '-');
                                 //desktop
-                                $(`.thirdLayer-${subs.name}  ul`).append(`<li  class="item-${grandsubs.name}"><a href="${grandsubs.url}">${divtextgrandsub}</a></li>`);
-        
-                                if (!subs.hasChildren) {
-                                    $(`.dropdown-container#${sub.name}`).append(`<div style="display:block;border-top: solid 1px #333;"><span class="depto-${subs.name}"><a href="${grandsubs.url}">${divtextgrandsub}</a></span></div>`);
-                                    $(`.depto-${subs.name} .row .col-sm-4.secondLayer-${subs.name}  ul .item-${grandsubs.name}`).mouseenter(function () {
-                                        // $(`.depto-${element.name} .row .col-sm-4.secondLayer`).hide()
-                                        $(`.depto-${subs.name} .row .col-sm-4.thirdLayer`).hide();
-                                    });
-                                }
+                                $(`.thirdLayer-${element.name}-${subs.name}  ul`).append(`<li  class="item-${grandsubs.name}"><a href="${grandsubs.url}">${divtextgrandsub}</a></li>`);
+
+                             
                             })
+                        }
 
 
 
 
 
 
-
-                        })
-
+                    })
 
 
 
 
-                    }
 
-                    //Desktop
+                }
+
+                //Desktop
 
 
-                 else {
+                else {
                     //$(".sidenav").append(`<span class="depto-${element.name}"><a href="${element.url}">${divtext}</a></span>`)
                     //Desktop
                     $(`.depto-${element.name}`).mouseenter(function () {
@@ -192,7 +189,7 @@ $(document).ready(function () {
 
     $("#allcatopeners").mouseenter(function () {
         $("#allcategories").show();
-        
+
 
     });
 

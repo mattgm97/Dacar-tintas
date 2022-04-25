@@ -87,7 +87,7 @@ body.menu-ativo:before {
 
 .deptonav .secondLayer, .deptonav .thirdLayer {
   display: none;
-}
+  margin-left: -1px;}
 
 
 .box-banner a img {
@@ -294,17 +294,16 @@ body.menu-ativo:before {
 }
 
 #deptos-list a i {
-  color: #fff;
+  color: #ed1b34;
   font-size: 20px;
   font-weight: 800;
   padding-left: 13px;
 }
 
-#deptos-list a i:hover {
-  color: #fff !important;
-}
+
 
 #deptos-list ul li:hover a {
+  color: #ED1B34 !important;
   font-weight: bold;
 }
 
