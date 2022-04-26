@@ -880,6 +880,8 @@ body.menu-ativo:before {
   }
   #menu-mobile .header-menu-mobile {
     margin-top: 8%;
+    display: flex !important;
+    justify-content: space-between;
   }
 
   #menu-mobile .header-menu-mobile h2{

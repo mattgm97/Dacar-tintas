@@ -139,7 +139,7 @@ $(document).ready(function () {
                             //Mobile
                             $(`.dropdown-btn#${element.name}-${subs.name}`).toggle(() => {
                                 // $(".dropdown-container").slideUp();
-                                $(`.dropdown-btn i`).attr('class', 'fa fa-angle-down');
+                               // $(`.dropdown-btn i`).attr('class', 'fa fa-angle-down');
                                 $(`.dropdown-btn#${element.name}-${subs.name} i`).attr('class', 'fa fa-angle-up');
                                 $(`.dropdown-container#${element.name}-${subs.name}`).slideDown()
                             }, () => {
@@ -155,7 +155,7 @@ $(document).ready(function () {
                                 grandsubs.name = grandsubs.name.replace(/[\s/,&]+/g, '-');
                                 //desktop
                                 $(`.thirdLayer-${element.name}-${subs.name}  ul`).append(`<li  class="item-${grandsubs.name}"><a href="${grandsubs.url}">${divtextgrandsub}</a></li>`);
-
+                                $(`.dropdown-container#${element.name}-${subs.name}`).append(`<div style="display:block;border-top: solid 1px #333;"><span class="depto-${subs.name}-${grandsubs.name}"><a href="${grandsubs.url}">${divtextgrandsub}</a></span></div>`);
 
                             })
                         }
