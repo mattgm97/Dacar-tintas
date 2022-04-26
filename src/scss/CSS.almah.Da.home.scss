@@ -105,6 +105,44 @@
     
         }
     }
+    .AreaBlog{
+        &__conteudo{
+           ul{
+               li{
+                   padding: 15px;
+                h3{
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 21px;
+                    text-transform: uppercase;
+                    color: #515151;
+                    padding-top: 30px;
+                    padding-bottom: 18px;
+                }
+                p{
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 17px;
+                    line-height: 20px;
+                    color: #515151;
+                    padding-bottom: 13px;
+                }
+                button{
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 15px;
+                    background: #FFC62A;
+                    border: none;
+                    border-radius: 3px;
+                    text-align: center;
+                    padding: 18px 45px 18px 45px;
+                    color: #4F4F4F;
+                }
+               }
+           }
+        }
+    }
 
     
 }
