@@ -226,7 +226,6 @@
     height: 46px;
     border: 1px solid #fff!important;
     font-family: 'switzerland';
-    letter-spacing: 2px;
   }
   
   #admake-advanced-filter {
@@ -425,6 +424,7 @@
       align-items: center;
       justify-content: space-between;
       padding: 0 15px;
+      border-bottom: solid 2px #C8C8C8;
     }
   }
   
