@@ -2,6 +2,7 @@
     background: #ED1B34;
     padding-top: 15px;
     padding-bottom: 10px;
+    margin: 0;
 
         p {
             font-style: normal;
@@ -10,6 +11,7 @@
             line-height: 40px;
             text-align: right;
             color: #FFFFFF;
+            margin-right: 2em;
         
         }
 
@@ -57,5 +59,8 @@
                 text-align: center;
                 color: #474747;
             }
+                .al-newsletter-input{
+                    margin: 0;
+                }
 }
 

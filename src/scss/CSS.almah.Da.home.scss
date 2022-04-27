@@ -30,7 +30,9 @@
                 display: flex;
                 justify-content: center;
                 li{
-                    padding: 20px;
+                    padding-top: 45px;
+                    padding-left: 0;
+                    padding-right: 20px;
                     img{
                         width: 100%;
                         height: auto;
@@ -45,6 +47,7 @@
             margin-left: 33px !important;
         }
         h3{
+            margin-left: 3em;
             font-style: normal;
             font-weight: 700;
             font-size: 20px;
@@ -67,15 +70,17 @@
             .bannertintas03__dacar{
                 justify-content: end;
                 img{
-                    width: 570px;
-                    height: auto;
+                    width: 695px;
+                    padding-top: 7px;
+                    height: 720px;
                 }
             }
             .bannertintas__dacar02{
                 ul{
                     li{
+                        padding: 7px;
                         img{
-                            width: 500px;
+                            width: 601px;
                             height: 100%;
                         }
                     }
@@ -92,6 +97,7 @@
                 line-height: 19px;
                 color: #26231e;
                 padding-top: 2em;
+                margin-left: 3em;
             }
             button.slick-prev.slick-arrow{
                 margin-left: 33px !important;
@@ -105,11 +111,15 @@
     
         }
     }
+    .ofertaRelampago{
+        margin-right: 64px;
+    }
     .AreaBlog{
         &__conteudo{
            ul{
                li{
                    padding: 15px;
+                   margin-left: -3px;
                 h3{
                     font-style: normal;
                     font-weight: 700;
