@@ -169,11 +169,11 @@ $(window).on("load",function () {
 			$recebeQtyForm.prepend(
 				'<div class="pull-left box-qtd">' +
 				'	<div class="bts">' +
-				'		<button class="btn btn-menos"><img src="/arquivos/mmenos.svg"/ style="margin-top: -2px;"></i></button>' +
+				'		<button class="btn btn-menos"><img src="/arquivos/minus.svg"/ style="margin-top: -2px;"></i></button>' +
 				' 	</div>' +
 				'	<input type="text" class="qtd" value="1" />' +
 				'	<div class="bts">' +
-				'		<button class="btn btn-mais"><img src="/arquivos/mmais.svg"/></i></button>' +
+				'		<button class="btn btn-mais"><img src="/arquivos/plus.svg"/></i></button>' +
 				' 	</div>' +
 				'</div>'
 			);

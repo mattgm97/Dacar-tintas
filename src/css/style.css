@@ -253,7 +253,7 @@
            border-color: #adadad;
          }
          .ui-autocomplete{
-           background-color: #fff;
+           background-color: #fff !important;
            padding: 20px;
            margin: 5px 0 0 0;
           
@@ -274,6 +274,8 @@
            }
              .ui-autocomplete .ui-menu-item a{
                color: #777;
+               text-decoration: none;
+               text-transform: capitalize;
                font-size: 15px;
                line-height: 17px;
              }
@@ -760,14 +762,15 @@
        display: none;
      }
        #box-bread-brumb li a{
-         color: #000;
-         font-size: 12px;
-         font-weight: 300;
-         line-height: 20px;
-         text-decoration: none;
+        color: #4F4F4F;
+        font-size: 14px;
+        font-weight: 300;
+        font-family: Arial;
+        line-height: 20px;
+        text-decoration: none;
        }
        #box-bread-brumb li a:hover{
-         color: #000;
+         color: #333;
        }
          #box-bread-brumb li strong a{
            color: #999999;
@@ -910,8 +913,11 @@
      display: block;
    }
      .product-details .seletor-sku .topic{
-       display: inline-block;
-       padding: 10px;
+      display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 0;
+    justify-content: flex-start;
      }
        .product-details .seletor-sku .specification{
          display: block;
@@ -929,7 +935,7 @@
          clear: both;
        }
          .product-info .seletor-sku .select .sku-selector{
-          /* display: none;*/
+           display: none !important;
           border: solid 2px #FE5000;
           border-radius: 5px;
           color: #4F4F4F;
@@ -998,12 +1004,13 @@
            display: block;
            width: 100%;
            height: 73%;
-           border-radius: 0;
            background-color: transparent;
            padding: 0;
            font-size: 16px;
            color: #CCCCCC;
            line-height: 11px;
+           border: 2px solid #ED1B34;
+    border-radius: 3px;
          }
          .buy-button-box .box-qtd .btn:hover{
            background-color: #F6F6F6;

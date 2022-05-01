@@ -20,7 +20,7 @@ $(".bt-refinar.search-filter-button.even").text("Aplicar Filtros");
     max-width: 26px;
     float: right;
     margin-top: -9px;" xmlns="http://www.w3.org/2000/svg" width="50.523" height="39.523" viewBox="0 0 50.523 39.523">
-    <path fill="none" stroke="rgb(0,0,0)" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="5" d="M11.76158875 11.76155253L25.7615618 27.76157612l13.00002696-15.9999781"/>
+    <path fill="none" stroke="#828282" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="5" d="M11.76158875 11.76155253L25.7615618 27.76157612l13.00002696-15.9999781"/>
   </svg>
   `);
 

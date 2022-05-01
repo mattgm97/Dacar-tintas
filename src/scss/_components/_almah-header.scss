@@ -34,6 +34,7 @@
   font-weight: bold;
 }
 .top-area {
+
   padding: 5px;
 }
 
@@ -392,9 +393,10 @@ body.menu-ativo:before {
 .sidenav a /*, .dropdown-btn */ {
   padding: 17px 8px 17px 0px;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 15px;
   color: #ffffff !important;
-  font-weight: 500;
+  font-weight: bold;
+  font-family: 'switzerland';
   display: block;
   text-transform: uppercase;
   border: none;
@@ -822,6 +824,13 @@ body.menu-ativo:before {
 }
 
 @media screen and (max-width: 1200px) {
+
+  #top-area-text{
+    padding: 2px;
+    h5{
+      font-size: 12px;
+    }
+  }
   ._orientationLeft_2657.wrap_196d,
   #powerSliderWidget1 {
     z-index: 33 !important;
@@ -848,7 +857,7 @@ body.menu-ativo:before {
   }
 
   .ui-autocomplete {
-    width: 328px !important;
+    width: 378px !important;
     left: 20px !important;
   }
 
