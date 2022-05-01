@@ -7,45 +7,45 @@
  *
  -->
 
- <!DOCTYPE html>
- <html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
-     xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="en-us">
- 
- <head>
-     <title> Produto</title>
-     <vtex:metaTags />
-     <vtex:template id="dacar-loads-header" />
-     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <link href="/arquivos/CSS.almah.Da.product.css" rel="stylesheet" type="text/css" />
- 
- </head>
- 
- <body id="product-page">
- 
-     <div class="page">
- 
-         <!--  SubTemplate: Header -->
-         <vtex:template id="ALMAH-Da-Header" />
-         <!-- /SubTemplate: Header -->
- 
-         <div id="product-extra-top"></div>
- 
-         <section id="product-content" class="container">
- 
-             <div id="box-bread-brumb" class="d-none d-sm-block">
-                 <vtex.cmc:breadCrumb />
-             </div>
- 
-             <div id="product-extra-middle"></div>
- 
-             <div class="row product-details">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="en-us">
+
+<head>
+    <title> Produto</title>
+    <vtex:metaTags />
+    <vtex:template id="dacar-loads-header" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/arquivos/CSS.almah.Da.product.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body id="product-page">
+
+    <div class="page">
+
+        <!--  SubTemplate: Header -->
+        <vtex:template id="ALMAH-Da-Header" />
+        <!-- /SubTemplate: Header -->
+
+        <div id="product-extra-top"></div>
+
+        <section id="product-content" class="container">
+
+            <div id="box-bread-brumb" class="d-none d-sm-block">
+                <vtex.cmc:breadCrumb />
+            </div>
+
+            <div id="product-extra-middle"></div>
+
+            <div class="row product-details">
 
 
                 <div class="product-image col-12 col-sm-6 col-lg-6 text-center">
                     <!--  Component: Product Images -->
                     <vtex.cmc:ProductImage zoom="on" />
 
-                
+
                 </div><!-- .product-image -->
 
                 <div class="product-info col-12 col-sm-6 col-lg-6">
@@ -54,7 +54,7 @@
                         <h1>
                             <vtex.cmc:productName />
                         </h1>
-                      
+
                     </div>
 
                     <div class="row">
@@ -65,8 +65,6 @@
                                 <vtex.cmc:brandName />
                             </div>
                         </div>
-
-
 
 
                     </div>
@@ -94,17 +92,11 @@
                     </div>
 
 
-
-
                     <div class="seletor-sku">
                         <vtex.cmc:skuselection />
                     </div><!-- .seletor-sku -->
 
-            
-                    
 
-
-                   
 
                     <div class="row">
 
@@ -126,10 +118,6 @@
                     </div>
 
 
-
-
-        
-
                     <div id="product-extra-details-1"></div>
 
 
@@ -139,17 +127,17 @@
                 </div><!-- .product-info -->
 
             </div><!-- .product-details -->
- 
- 
- 
-             <div id="product-extra-details-3"></div>
-            
- 
-             <div id="product-extra-description-5"></div>
 
-           
- 
-           <!--<div class="product-description-box" id="sugestions" style="    margin: 4em 0;">
+
+
+            <div id="product-extra-details-3"></div>
+
+
+            <div id="product-extra-description-5"></div>
+
+
+
+            <!--<div class="product-description-box" id="sugestions" style="    margin: 4em 0;">
               
                
              <div class="product-carousel">
@@ -160,8 +148,8 @@
               <div class="product-carousel">
                      <vtex:contentPlaceHolder id="Quem-viu-viu-tambem" />
                  </div> 
-             </div>--> 
-             <style>
+             </div>-->
+            <style>
                 @media (max-width: 600px) {
                     #svgdoprod {
                         width: 100% !important;
@@ -169,93 +157,132 @@
                     }
                 }
             </style>
-     <div class="product-description-box" id="sugestions" style="    margin: 2em 0;">
-              
-               
-        <div class="product-carousel">
-              <vtex:contentPlaceHolder id="ofertas" />
-          </div> 
-            
-          
-        </div>
+           
             <div id="anchor-more-info"></div>
- 
-             <div class="product-description">
- 
-                 <div class="btn-group" id="product-specs" role="group" aria-label="menu-anchor">
-                    <a id="btn-specification" class="btn btn-default">Especificação</a>
-                     <a id="btn-description" class="btn btn-default active-tab">Descrição</a>
-                     
- 
-                 </div>
- 
-            
- 
- 
-                 <div class="product-description-box">
-                     <div id="description">
- 
-                         <span class="d-md-none  d-lg-none  prod-infos" style="font-weight: 800;">X Fechar</span>
- 
-                         <!--  Component: Description -->
-                         <vtex.cmc:ProductDescription />
-                     </div><!-- .description -->
-                 </div>
- 
- 
- 
-                 <div class="product-description-box">
-                     <div id="specification">
-                         <span class="d-md-none d-lg-none prod-infos" style="font-weight: 800;">X Fechar</span>
-                         <!--  Component: Specification -->
-                         <vtex.cmc:productSpecification />
-                     </div><!-- .description -->
-                 </div>
- 
-            
 
-                   <!--   <div class="product-description-box">
-                       
-                        <vtex.cmc:BuyTogether />
-                    </div>-->
- 
- 
-                 <div class="product-description-box">
-                     <div id="reviews" class="rating">
- 
-                     </div>
-                 </div>
- 
- 
- 
-             </div><!-- .product-description -->
- 
- 
-         </section>
- 
-         <div id="product-extra-bottom"></div>
- 
-            <!--  SubTemplate: Footer -->
-            <vtex:template id="dacar-footer-links" />
-            <vtex:template id="dacar-footer" />
-            <!-- /SubTemplate: Footer -->
- 
- 
- 
-     </div><!-- .container-fluid -->
- 
- 
- 
-     <!-- Modal -->
-  
- 
- 
- 
- 
- </body>
- <script src="/arquivos/JS.almah.Da.product.js"></script>
- <vtex:template id="dacar-loads-footer" />
- 
+        
 
- 
- </html>
+
+        </section>
+
+        <section id="specsArea">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="product-description">
+
+                            <div class="btn-group" id="product-specs" role="group" aria-label="menu-anchor">
+                                <a id="btn-specification" class="btn btn-default">Especificação</a>
+                                <a id="btn-description" class="btn btn-default active-tab">Descrição</a>
+
+
+                            </div>
+
+
+
+
+                            <div class="product-description-box">
+                                <div id="description">
+
+                                    <span class="d-md-none  d-lg-none  prod-infos" style="font-weight: 800;">X
+                                        Fechar</span>
+
+                                    <!--  Component: Description -->
+                                    <vtex.cmc:ProductDescription />
+                                </div><!-- .description -->
+                            </div>
+
+
+
+                            <div class="product-description-box">
+                                <div id="specification">
+                                    <span class="d-md-none d-lg-none prod-infos" style="font-weight: 800;">X
+                                        Fechar</span>
+                                    <!--  Component: Specification -->
+                                    <vtex.cmc:productSpecification />
+                                </div><!-- .description -->
+                            </div>
+
+
+
+                            <!--   <div class="product-description-box">
+                   
+                    <vtex.cmc:BuyTogether />
+                </div>-->
+
+
+                            <div class="product-description-box">
+                                <div id="reviews" class="rating">
+
+                                </div>
+                            </div>
+
+
+
+                        </div><!-- .product-description -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="product-description-box" id="whoa">
+
+                        <div class="product-carousel">
+                            <vtex:contentPlaceHolder id="whosawalsosaw" />
+                        </div>
+        
+        
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" style="margin-bottom: 65px;">
+                <div id="carouselbannerprod">
+                    <div class="item">
+
+                        <vtex:contentPlaceHolder id="Banner-final-left" />
+                    </div>
+                    <div class="item">
+
+
+                        <vtex:contentPlaceHolder id="Banner-final-right" />
+
+                    </div>
+                    
+                   
+
+                </div>
+            </div>
+
+           
+        </div>
+
+        <div id="product-extra-bottom"></div>
+
+        <!--  SubTemplate: Footer -->
+        <vtex:template id="dacar-footer-links" />
+        <vtex:template id="dacar-footer" />
+        <!-- /SubTemplate: Footer -->
+
+
+
+    </div><!-- .container-fluid -->
+
+
+
+    <!-- Modal -->
+
+
+
+
+
+</body>
+<script src="/arquivos/JS.almah.Da.product.js"></script>
+<vtex:template id="dacar-loads-footer" />
+
+
+
+</html>

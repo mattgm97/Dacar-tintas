@@ -25,6 +25,24 @@ docReady(function() {
 
 
 
+    $('#carouselbannerprod').slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        autoplay: false,
+        autoplaySpeed: 3000,
+        arrows: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true
+            }
+        }]
+
+    });
+
 
 
     $(".slick-prev.slick-arrow").html(`
