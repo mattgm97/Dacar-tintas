@@ -43,7 +43,75 @@ docReady(function() {
 
     });
 
+    $('.AreaBlog ul').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        autoplay: false,
+        autoplaySpeed: 3000,
+        arrows: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true
+            }
+        }]
 
+    });
+    $('.NossasTintas ul').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll:4,
+        autoplay: false,
+        autoplaySpeed: 3000,
+        arrows: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                arrows: true
+            }
+        }]
+
+    });
+    $('.ColecaoRelampago__dacar ul').slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll:2,
+        autoplay: false,
+        autoplaySpeed: 3000,
+        arrows: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true
+            }
+        }]
+
+    });
+
+    $('.Colecaolancamento ul').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll:4,
+        autoplay: false,
+        autoplaySpeed: 3000,
+        arrows: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true
+            }
+        }]
+
+    });
 
     $(".slick-prev.slick-arrow").html(`
     <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">

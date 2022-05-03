@@ -54,14 +54,20 @@
             </section>
 
             <section class="ColecaoRelampago">
-
-                <div class="container ofertaRelampago">
-                    <vtex:contentPlaceHolder id="banneOferta" type="banner" />
-                </div>
+                <div class="col-12 col-md-12">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-6 ofertaRelampago">
+                                <vtex:contentPlaceHolder  id="titulo-banneOferta" type="html" />
+                                <vtex:contentPlaceHolder id="banneOferta" type="banner" />
+                            </div>
                 
-                <div class="container ColecaoRelampago__dacar">
-                    <vtex:contentPlaceHolder  id="titulo-1" type="html" />
-                    <vtex:contentPlaceHolder  id="prateleira-padrao-1" type="colecao" />
+                            <div class="col-12 col-md-6 ColecaoRelampago__dacar">
+                                <vtex:contentPlaceHolder  id="titulo-1" type="html" />
+                                <vtex:contentPlaceHolder  id="prateleira-padrao-1" type="colecao" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </section>
@@ -185,9 +191,3 @@
 <vtex:template id="dacar-loads-footer" />
 
 </html>
-
-
-<img src="/arquivos/TintasBlog.png" alt="">
-<h3>Ler Post Completo</h3>
-<p>Ler Post Completo</p>
-<button>Ler Post Completo</button>

@@ -112,7 +112,39 @@
         }
     }
     .ofertaRelampago{
-        margin-right: 64px;
+      h1{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 19px;
+        text-align: inherit;
+        color: #26231E;
+        margin-bottom: 30px;
+        margin-top: 47px;
+      }
+    }
+    .ColecaoRelampago__dacar{
+        h1{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 19px;
+            text-align: inherit;
+            color: #26231E;
+            margin-bottom: 30px;
+            margin-top: 47px;
+          }
+    }
+    .Colecaolancamento{
+        h1{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 19px;
+            margin-top: 46px;
+            color: #26231E;
+            margin-bottom: 30px;
+        }
     }
     .AreaBlog{
         &__conteudo{
