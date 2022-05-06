@@ -456,10 +456,11 @@ body.menu-ativo:before {
 
 #mini-cart-admake .mini-cart-item .nome-produto a {
   text-align: left;
-  font-size: 15px !important;
-  line-height: 20px !important;
-  color: #333 !important;
-  font-weight: 500 !important;
+  font-size: 19px!important;
+  line-height: 20px!important;
+  color: #727272!important;
+  font-weight: bold!important;
+  font-family: 'switzerland';
 }
 
 #mini-cart-admake .mini-cart-item .qtd-valor {
@@ -507,18 +508,19 @@ body.menu-ativo:before {
 }
 
 #mini-cart-admake .mini-cart-botao .btn-finalizar-compra {
-  line-height: 26px !important;
-  border-radius: 5px !important;
-  color: #515151 !important;;
+  line-height: 26px!important;
+  border-radius: 5px!important;
+  color: #515151!important;
   display: block;
   text-transform: uppercase;
-  background-color: #FFC62A !important;
-  font-weight: 700 !important;
-  font-size: 14px !important;
-  padding: 12px !important;
+  background-color: #ffc62a!important;
+  font-weight: bold!important;
+  font-size: 16px!important;
+  padding: 12px!important;
   text-decoration: none;
   float: right;
   width: 100%;
+  font-family: 'switzerland';
   margin: 4px 0;
   text-align: center;
 }
@@ -617,9 +619,7 @@ body.menu-ativo:before {
   margin-left: 50px;
 }
 
-.prateleira.vitrine h2 {
-  display: none;
-}
+
 
 .vtexIdUI .btn-success {
   color: #ffffff;
@@ -876,6 +876,11 @@ body.menu-ativo:before {
 }
 
 @media screen and (max-width: 600px) {
+
+  #top-area-text h5{
+    font-size: 11px !important;
+    text-align: center !important;
+  }
   .depto-nav-area {
     margin-top: 1.8em;
   }

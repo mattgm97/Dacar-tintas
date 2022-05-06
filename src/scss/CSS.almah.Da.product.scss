@@ -569,7 +569,7 @@ input.qtd.pull-left {
   font-size: 18px;
   font-weight: 400;
   line-height: 16px;
-  padding: 10px !important;
+  padding: 12px 22px !important;
   margin: 5px 12px 0 0;
   cursor: pointer;
   transition: all 0.3s;
@@ -618,7 +618,7 @@ label.combination_unavaliable:after {
     border: 2px solid #bdbdbd !important;
     border-radius: 0px 5px 5px 0px !important;
     padding: 0px 29px;
-    margin-top: -3px;
+    margin-top: -1px;
     height: 40px;
     margin-left: -6px;
     border-left-color: transparent !important;
@@ -896,12 +896,7 @@ label.item_unavaliable:after {
   width: 60%;
 }
 
-.cesta-modal {
-  background-color: white !important;
-  border-color: #ffc701 !important;
-  box-shadow: none !important;
-  color: #ffc701 !important;
-}
+
 
 .more-info-btn {
   background-color: white !important;
@@ -1129,8 +1124,8 @@ label.item_unavaliable:after {
 
 #product-specs a:hover,
 .active-tab {
-  border-bottom: 4px solid #ED1B34 !important;
-  color: #ED1B34 !important;
+  border-bottom: 4px solid #ed1b34 !important;
+  color: #ed1b34 !important;
   transition: 0.3s;
 }
 
@@ -1171,8 +1166,8 @@ label.item_unavaliable:after {
     box-sizing: border-box;
     box-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
   }
-  #specsArea{
-    background-color: #ECECEC;
+  #specsArea {
+    background-color: #ececec;
     margin-top: 3em;
   }
 }
@@ -1184,8 +1179,6 @@ label.item_unavaliable:after {
 }
 
 @media screen and (max-width: 800px) {
-
-
   .product-info {
     .shipping-box .freight-btn {
       margin-top: -2px !important;
@@ -1383,6 +1376,10 @@ label.item_unavaliable:after {
     .selectedspecification span.label,
     .selectedspecification-value {
       text-align: center !important;
+    }
+
+    #product-specs {
+      width: 96%;
     }
   }
 

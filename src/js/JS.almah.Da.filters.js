@@ -58,7 +58,11 @@ $("fieldset.refino h5").on("click",function(){
 
   $("fieldset.refino div label").on("click", function(){
 if($("input", this).is(":checked")){
-    $("i", this).attr('class',"fa fa-check-square-o")
+    $("i", this).html(`<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="1" y="1" width="16" height="16" rx="1" fill="#ED1B34" stroke="#ED1B34" stroke-width="2"/>
+    <path d="M14 6.68044L12.1579 5L8 9.38147L5.84211 7.10311L4 8.78348L8 13L14 6.68044Z" fill="white"/>
+    </svg>
+    `)
 } else {
     $("i", this).html(`
     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
@@ -69,7 +73,11 @@ if($("input", this).is(":checked")){
  
  })
 
- $( "a.ver-filtros" ).siblings("label").children("i").attr('class',"fa fa-check-square-o")
+ $( "a.ver-filtros" ).siblings("label").children("i").html(`
+ <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+<rect x="1" y="1" width="16" height="16" rx="1" fill="white" stroke="#ED1B34" stroke-width="2"/>
+</svg>
+ `)
 
 }, 1000)
 

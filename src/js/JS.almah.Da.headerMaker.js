@@ -99,7 +99,7 @@ $(document).ready(function () {
                         //desktop
 
                         if (!subs.hasChildren) {
-                            $(`.dropdown-container#${element.name}`).append(`<div style="display:block;border-top: solid 1px #333;"><span class="depto-${element.name}"><a href="${subs.url}">${divtextsub}</a></span></div>`);
+                            $(`.dropdown-container#${element.name}`).append(`<div style="display:block;"><span class="depto-${element.name}"><a href="${subs.url}">${divtextsub}</a></span></div>`);
 
                             $(`.depto-${element.name} .row .col-sm-4.firstLayer-${element.name}  ul .item-${element.name}-${subs.name}`).mouseenter(function () {
                                 // $(`.depto-${element.name} .row .col-sm-4.secondLayer`).hide()
@@ -117,7 +117,7 @@ $(document).ready(function () {
                         </div>
                         `);
                             //mobile
-                            $(`.dropdown-container#${element.name}`).append(`<div style="display:block;border-top: solid 1px #333;"><span class="depto-${element.name}-${subs.name}"><a href="${subs.url}">${divtextsub}</a></span><button class="dropdown-btn" id="${element.name}-${subs.name}"><i class="fa fa-angle-down"></i></button></div>
+                            $(`.dropdown-container#${element.name}`).append(`<div style="display:block;"><span class="depto-${element.name}-${subs.name}"><a href="${subs.url}">${divtextsub}</a></span><button class="dropdown-btn" id="${element.name}-${subs.name}"><i class="fa fa-angle-down"></i></button></div>
                     <div class="dropdown-container" id="${element.name}-${subs.name}"></div>`);
 
 
@@ -155,7 +155,7 @@ $(document).ready(function () {
                                 grandsubs.name = grandsubs.name.replace(/[\s/,&]+/g, '-');
                                 //desktop
                                 $(`.thirdLayer-${element.name}-${subs.name}  ul`).append(`<li  class="item-${grandsubs.name}"><a href="${grandsubs.url}">${divtextgrandsub}</a></li>`);
-                                $(`.dropdown-container#${element.name}-${subs.name}`).append(`<div style="display:block;border-top: solid 1px #333;"><span class="depto-${subs.name}-${grandsubs.name}"><a href="${grandsubs.url}">${divtextgrandsub}</a></span></div>`);
+                                $(`.dropdown-container#${element.name}-${subs.name}`).append(`<div style="display:block;"><span class="depto-${subs.name}-${grandsubs.name}"><a href="${grandsubs.url}">${divtextgrandsub}</a></span></div>`);
 
                             })
                         }

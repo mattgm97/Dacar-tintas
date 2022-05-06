@@ -251,16 +251,13 @@ fieldset {
 }
 .prateleira.vitrine {
 	h2 {
-		font-size: 36px!important;
-		margin-top: 1em;
-		padding: 4px;
-		background: #FFC701;
-    	height: 50px;
-    	color: #633510 !important;
-    	font-family: "ChaletComprime-CologneEighty";
-		&:after {
+		font-size: 20px!important;
+		text-transform: uppercase;
+		color: #26231E!important;
+		font-family: 'switzerland';
+		/*&:after {
 			background: none !important;
-		}
+		}*/
 	}
 }
 .section-title {

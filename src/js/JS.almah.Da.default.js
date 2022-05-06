@@ -30,38 +30,30 @@ function insertProductOnCart(item){
 						<p class="nome-produto">
 							<a href="${latest.detailUrl}">${latest.name}</a>
 						</p>
+
+						<div class="prod-total"><span class="price" style="float: right;font-weight: bolder;color: #4f4f4f!important;">${latest.formattedPrice}</span></div>
 						
-			
+			<div class="quantity-pill">
 						<button class="btn btn-menos-check" style="background-color: transparent;outline-style: none;
 					box-shadow: none;"><i class="fa fa-minus"></i></button>
 					<input type="number" class="qtd-field" value="${latest.quantity}" style="width: 50px;
 					margin: 11px;
 					padding-left: 11px;
 					font-size: 18px !important;
-					color: #000 !important;" disabled="">
+					color: #4F4F4F !important;
+    font-family: 'Arial';
+    font-weight: bold;" disabled="">
 					<button class="btn btn-mais-check" style="background-color: transparent;outline-style: none;
 					box-shadow: none;"><i class="fa fa-plus"></i></button>
+
+			</div>
 					<span class="product-remover">
 					
 					
 					
-					<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-viewBox="0 0 130.9 134.6" style="enable-background:new 0 0 130.9 134.6;float: right;    width: 24px;
-margin-top: 14px;" xml:space="preserve">
-<title>trash, delete, remove</title>
-<g>
-<path d="M52.6,57.4c-2.7,0.2-4.7,2.6-4.5,5.3l2.6,29.7C50.8,95,53,97,55.6,97H56c2.7-0.2,4.7-2.6,4.5-5.4c0,0,0,0,0,0l-2.6-29.7
-C57.7,59.2,55.3,57.2,52.6,57.4z"/>
-<path d="M73,62l-2.6,29.7c-0.2,2.7,1.8,5,4.5,5.2h0.4c2.6,0,4.7-1.9,4.9-4.5l2.6-29.7c0.2-2.7-1.8-5.1-4.5-5.4
-C75.6,57.2,73.2,59.2,73,62L73,62z"/>
-<path d="M119.9,22.8H85.2v-4.9C85.2,9.6,78.6,3,70.4,3h-9.9c-8.2,0-14.8,6.6-14.8,14.8v4.9H11.1c-2.7,0-4.9,2.2-4.9,4.9
-s2.2,4.9,4.9,4.9h5.4l7.7,76.7c1.3,12.7,12,22.3,24.7,22.3h33.4c12.7,0.1,23.5-9.6,24.7-22.3l7.5-76.7h5.4c2.7,0,4.9-2.2,4.9-4.9
-S122.6,22.8,119.9,22.8z M55.6,17.8c0-2.7,2.2-4.9,4.9-4.9h9.9c2.7,0,4.9,2.2,4.9,4.9v4.9H55.6V17.8z M97,108.3
-c-0.8,7.6-7.2,13.4-14.8,13.4H48.7c-7.6,0-14.1-5.7-14.8-13.4l-7.5-75.7h78.1L97,108.3z"/>
-</g>
-</svg>
+					<svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M14.1476 2.64H19.2918C20.1363 2.64 20.8273 3.26526 20.8018 4.00632V4.9558C20.8018 5.72 20.1107 6.34526 19.2661 6.34526H19.0359L17.9354 19.9621C17.8586 21.0968 16.7836 22 15.5296 22H6.03476C4.78073 22 3.73142 21.0968 3.62913 19.9621L2.52861 6.36842H2.29821C1.45376 6.36842 0.762695 5.74316 0.762695 4.97894V4.02948C0.762695 3.26526 1.45376 2.64 2.29821 2.64H7.41676L7.80067 1.11157C7.97986 0.463165 8.61958 0 9.36186 0L12.2282 0.0231628C12.9704 0.0231628 13.6358 0.509476 13.7893 1.1579L14.1476 2.64ZM9.36173 1.13474C9.20808 1.13474 9.05457 1.22737 9.02903 1.36632L8.72187 2.64H12.8934L12.5864 1.38947C12.5352 1.25052 12.4072 1.1579 12.2537 1.1579L9.36173 1.13474ZM19.2917 5.21053C19.4197 5.21053 19.5476 5.1179 19.5476 4.97894V4.02948C19.5476 3.91368 19.4452 3.7979 19.2917 3.7979H2.29821C2.17024 3.7979 2.04227 3.89053 2.04227 4.02948V4.97894C2.04227 5.09474 2.1447 5.21053 2.29821 5.21053H19.2917ZM16.7069 19.8926C16.6556 20.4484 16.1438 20.8653 15.5553 20.8653H6.0603C5.44612 20.8653 4.95992 20.4484 4.9087 19.8926L3.80818 6.36842H17.7817L16.7069 19.8926Z" fill="#ED1C24"/>
+					</svg>
 
 					
 					
@@ -70,7 +62,7 @@ c-0.8,7.6-7.2,13.4-14.8,13.4H48.7c-7.6,0-14.1-5.7-14.8-13.4l-7.5-75.7h78.1L97,10
 					
 					</span>
 					</span>
-					<div class="prod-total"><span class="price" style="float: right;font-weight: bolder;color: #4f4f4f!important;">Valor ${latest.formattedPrice}</span></div>
+					
 			
 				</div>
 			`);
