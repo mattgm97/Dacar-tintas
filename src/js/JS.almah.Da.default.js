@@ -36,9 +36,10 @@ function insertProductOnCart(item){
 			<div class="quantity-pill">
 						<button class="btn btn-menos-check" style="background-color: transparent;outline-style: none;
 					box-shadow: none;"><i class="fa fa-minus"></i></button>
-					<input type="number" class="qtd-field" value="${latest.quantity}" style="width: 50px;
-					margin: 11px;
-					padding-left: 11px;
+					<input type="number" class="qtd-field" value="${latest.quantity}" style="width: 40px;
+					background-color: #F2EEEA;
+					border: none !important;
+					text-align: center;
 					font-size: 18px !important;
 					color: #4F4F4F !important;
     font-family: 'Arial';

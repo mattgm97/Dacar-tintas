@@ -154,7 +154,7 @@
        }
          .header .mini-cart i{
            margin-right: 2px;
-           font-size: 18px;
+           font-size: 14px;
            line-height: 32px;
            vertical-align: top;
            color: #4F4F4F;
@@ -188,8 +188,11 @@
                
                #mini-cart-admake .mini-cart-item .imagem{ width: 120px; float: left;}
                  #mini-cart-admake .mini-cart-item .imagem img{ max-width: 100%; }
-               #mini-cart-admake .mini-cart-item .detalhes{ overflow: hidden; display: block;} 
-               #mini-cart-admake .mini-cart-item .nome-produto { margin: 0; }
+               #mini-cart-admake .mini-cart-item .detalhes{ overflow: hidden; display: flex;
+                align-items: center;
+                justify-content: left;
+                flex-wrap: wrap;} 
+               #mini-cart-admake .mini-cart-item .nome-produto { margin: 0;width: 97%; margin-bottom: 8px;}
                  #mini-cart-admake .mini-cart-item .nome-produto a{ color: #333; font-size: 13px; font-weight: 400; line-height: 17px; padding: 5px 0; margin: 0;display: block;} 
                    #mini-cart-admake .mini-cart-item .qtd-valor{ display: block; text-align: left; } 
                      #mini-cart-admake .mini-cart-item .qtd-valor .qtd{ color: #333; font-size: 14px; font-weight: 400; line-height: 20px; } 
