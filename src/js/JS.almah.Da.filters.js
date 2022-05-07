@@ -54,7 +54,9 @@ $("fieldset.refino h5").on("click",function(){
 
 
 
-  $("fieldset.refino div label").prepend(`<i class="fa fa-square-o"></i>`);
+  $("fieldset.refino div label").prepend(`<i class="fa fa-square-o"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+  <rect x="1" y="1" width="16" height="16" rx="1" fill="white" stroke="#ED1B34" stroke-width="2"/>
+  </svg></i>`);
 
   $("fieldset.refino div label").on("click", function(){
 if($("input", this).is(":checked")){

@@ -423,6 +423,7 @@
          #menu-mobile .close-menu{
            color: #ccc;
            font-size: 30px;
+           margin-left: 6%;
            line-height: 30px;
            -webkit-transition: 0.3s all;
            transition: 0.3s all;

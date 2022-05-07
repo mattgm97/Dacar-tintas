@@ -101,11 +101,14 @@ setTimeout(()=>{
       <div class="quantity-pill">
       <button class="btn btn-menos-check" style="background-color: transparent;outline-style: none;
     box-shadow: none;"><i class="fa fa-minus"></i></button>
-    <input type="number" class="qtd-field" value="${element.quantity}" style="width: 50px;
-    margin: 11px;
-    padding-left: 11px;
+    <input type="number" class="qtd-field" value="${element.quantity}" style="width: 40px;
+    background-color: #F2EEEA;
+    border: none !important;
+    text-align: center;
     font-size: 18px !important;
-    color: #000 !important;" disabled="">
+    color: #4F4F4F !important;
+font-family: 'Arial';
+font-weight: bold;" disabled="">
     <button class="btn btn-mais-check" style="background-color: transparent;outline-style: none;
     box-shadow: none;"><i class="fa fa-plus"></i></button>
 

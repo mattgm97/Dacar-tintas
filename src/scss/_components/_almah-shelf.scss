@@ -11,6 +11,10 @@
 .prateleira .box-item:hover .principal {
     display: none;
 }*/
+
+.product-carousel{
+	margin-bottom: 3em;
+}
 .prateleira {
 	ul{
 		li{
@@ -255,6 +259,7 @@ fieldset {
 		text-transform: uppercase;
 		color: #26231E!important;
 		font-family: 'switzerland';
+		margin: 4% 0 4% 0%;
 		/*&:after {
 			background: none !important;
 		}*/
