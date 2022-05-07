@@ -11,28 +11,39 @@
  <html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="en-us">
  
  <head>
-     <title>Minha Conta</title>
+     <title>Minha conta</title>
      <vtex:metaTags/>
      <vtex:template id="dacar-loads-header" />
+     <link href="/arquivos/CSS.almah.Da.account.css" rel="stylesheet" type="text/css" />
      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
  
  </head>
  
- <body id="login-page">
+ <body id="account-page">
  
      <div class="page">
  
          <!--  SubTemplate: Header -->
          <vtex:template id="ALMAH-Da-Header" />
          <!-- /SubTemplate: Header -->
-                     
-         <div id="login-extra-top"></div>                    
  
-         <section id="login-content" class="container">
-             <vtex.cmc:userLogin/>
+         <div id="account-extra-top"></div>
+ 
+         <section id="account-content" class="container" style="background-color: white;">
+             
+             <div class="row">
+ 
+                 <div class="col-xs-12">
+                     <vtex.cmc:accountUserProfile />
+                 </div>
+                
+             
+             </div>
+ 
          </section><!-- #content -->  
-                     
-         <div id="login-extra-bottom"></div>   
+         
+         <div id="account-extra-bottom"></div>
                  
          <!--  SubTemplate: Footer -->
          <vtex:template id="dacar-footer-links" />
@@ -43,6 +54,8 @@
  
  </body>
  <vtex:template id="dacar-loads-footer" />
-
-
+    
+   
+     
+  
  </html>
