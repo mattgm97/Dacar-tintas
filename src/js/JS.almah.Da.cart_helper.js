@@ -58,7 +58,7 @@ setTimeout(()=>{
         </svg>
 									</span>
 
-        <div class="prod-total"><span style="float: left;
+        <div class="prod-total" style="width: 78px;"><span style="float: left;
         font-weight: 500;
     ">Valor</span><span class="price" style="float: right;font-weight: bolder;"></span></div>
         
@@ -93,7 +93,7 @@ setTimeout(()=>{
         <p class="nome-produto">
           <a href="${element.detailUrl}">${element.name}</a>
         </p>
-        <div class="prod-total"><span class="price" style="float: right;font-weight: bolder;color: #4f4f4f!important;">${element.formattedPrice}</span></div>
+        <div class="prod-total" style="width: 78px;"><span class="price" style="float: left;font-weight: bolder;color: #4f4f4f!important;">${element.formattedPrice}</span></div>
   
       
 

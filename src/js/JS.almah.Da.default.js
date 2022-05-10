@@ -31,7 +31,7 @@ function insertProductOnCart(item){
 							<a href="${latest.detailUrl}">${latest.name}</a>
 						</p>
 
-						<div class="prod-total"><span class="price" style="float: right;font-weight: bolder;color: #4f4f4f!important;">${latest.formattedPrice}</span></div>
+						<div class="prod-total" style="width: 78px;"><span class="price" style="float: left;font-weight: bolder;color: #4f4f4f!important;">${latest.formattedPrice}</span></div>
 						
 			<div class="quantity-pill">
 						<button class="btn btn-menos-check" style="background-color: transparent;outline-style: none;
