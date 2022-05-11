@@ -303,6 +303,7 @@
   display: inline-block !important;
   font-size: 35px !important;
   font-style: normal !important;
+  
 }
 
 .preco-a-vista {
@@ -363,6 +364,51 @@
 
 .product-details .avaliacoes {
   text-align: left !important;
+}
+
+.plugin-preco{
+display: none;
+}
+
+#priceBlocker{
+  font-family: 'switzerland';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+    line-height: 20px;
+    text-align: center;
+    background: #4F4F4F;
+    opacity: 0.77;
+    border: 2px solid #4F4F4F;
+    border-radius: 3px;
+    width: 72%;
+    cursor: pointer;
+    padding: 18px;
+}
+
+#pleaseLogin{
+  
+color: #4F4F4F;
+  h2{
+    font-family: 'switzerland';
+font-size: 35px;
+font-weight: bold;
+line-height: 34px;
+letter-spacing: 0em;
+text-align: center;
+margin-top: 1em;
+ }
+ p{
+   font-family: 'Arial';
+   text-align: center;
+   margin-top: 3em;
+   a{
+     color: #ED1B34;
+     font-weight: bold;
+     text-decoration: none;
+   }
+ }
 }
 
 #comprar-flutuante .descricao-preco .valor-por strong,
