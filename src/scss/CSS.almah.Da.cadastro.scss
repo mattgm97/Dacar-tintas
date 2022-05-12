@@ -1,0 +1,27 @@
+.hide{
+    display: none;
+}
+
+label{
+    margin-bottom: 10px;
+    margin-right: 10px;
+    font-family: 'Arial';
+}
+
+#buttonSubmit{
+    background-color: #ffc62a !important;
+    border-radius: 5px;
+    font-style: normal;
+    border: none;
+    padding: 15px 50px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 17px;
+    text-align: center;
+    color: #474747;
+    margin-top: 2em;
+}
+
+.form-control{
+    margin-bottom: 1em;
+}

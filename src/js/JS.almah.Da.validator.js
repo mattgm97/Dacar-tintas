@@ -1,10 +1,9 @@
-
 setTimeout(()=>{
     vtexjs.session.getSession().done(e => {
         //  console.log(e)
         let userInfo = e.namespaces.profile;
         let amIApproved = false
-        fetch(`/api/dataentities/CL/search?_fields=email,approved&email=*${userInfo.email.value}*`, {
+        fetch(`/api/dataentities/CL/search?_fields=email,approved&email=*${userInfo?.email?.value}*`, {
             method: "GET",
             headers: {
                 'Content-Type': 'application/json', "Accept": "application/vnd.vtex.ds.v10+json"
@@ -14,7 +13,7 @@ setTimeout(()=>{
                 return response.json();
             })
             .then(res => {
-                res[0].approved ? amIApproved = res[0].approved : amIApproved = false
+                res[0]?.approved ? amIApproved = res[0].approved : amIApproved = false
     
                 console.log(amIApproved)
                 if (userInfo.isAuthenticated.value == 'true' && amIApproved) {

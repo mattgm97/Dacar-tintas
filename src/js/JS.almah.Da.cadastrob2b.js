@@ -188,6 +188,8 @@ $('#teminscricao').click(() => {
 
 async function clientSave() {
 
+    //AS ROTAS SÓ VÃO FUNCIONAR SE TIVER INSTALADO O SAFEDATA DA VTEX E O USUARIO ESTIVER LOGADO
+
 
     var jsonSaveDadosUser = {
         "firstName": $("#nome").val(),
@@ -209,7 +211,7 @@ async function clientSave() {
     // colocar e-mail tambem como campo
     let alreadyRequested = false;
     let cnpjchecker = jsonSaveDadosUser.corporateDocument.replace(/[\s-/,]+/g, '');
-    let resultscnpj = await fetch(`/api/dataentities/CL/search?_fields=corporateDocument&corporateDocument=*${cnpjchecker}*`, {
+    let resultscnpj = await fetch(`/api/io/safedata/CL/search?_fields=corporateDocument&corporateDocument=*${cnpjchecker}*`, {
         method: "GET",
         headers: {
             'Content-Type': 'application/json', "Accept": "application/vnd.vtex.ds.v10+json"
@@ -220,7 +222,7 @@ async function clientSave() {
         });
     console.log(resultscnpj);
 
-    let resultsemail = await fetch(`/api/dataentities/CL/search?_fields=email&email=*${jsonSaveDadosUser.email}*`, {
+    /*let resultsemail = await fetch(`/api/io/safedata/CL/search?_fields=email&email=*${jsonSaveDadosUser.email}*`, {
         method: "GET",
         headers: {
             'Content-Type': 'application/json', "Accept": "application/vnd.vtex.ds.v10+json"
@@ -229,7 +231,7 @@ async function clientSave() {
         .then(response => {
             return response.json();
         });
-    console.log(resultsemail);
+    console.log(resultsemail);*/
 
 
 
@@ -237,18 +239,18 @@ async function clientSave() {
 
 
 
-    if (resultscnpj.length >= 1 || resultsemail.length >= 1) {
+    if (resultscnpj.length >= 1 /*|| resultsemail.length >= 1*/) {
         alreadyRequested = true;
     }
 
 
 
     if (alreadyRequested) {
-        alert("Seu formulÃ¡rio de cadastro jÃ¡ foi enviado, aguarde sua aprovaÃ§Ã£o.");
+        alert("Seu formulário de cadastro já foi enviado, aguarde sua aprovação.");
     } else {
         console.log("nao existo ainda")
 
-        var urlSaveDadosUser = '/api/dataentities/CL/documents/';
+        var urlSaveDadosUser = '/api/io/safedata/CL/documents/';
 
         $.ajax({
             headers: {
