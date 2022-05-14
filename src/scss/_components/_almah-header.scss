@@ -39,6 +39,10 @@
 }
 
 
+.prod-total{
+  width: 78px;
+}
+
 
 .ui-state-hover,
 .ui-widget-content .ui-state-hover,
@@ -672,6 +676,34 @@ body.menu-ativo:before {
   font-weight: bold;
   font-size: 20px;
   color: #4f4f4f !important;
+}
+
+
+.menu-logged li {
+  margin-bottom: 0.4em;
+  }
+.menu-logged li a{
+font-size: 16px;
+font-family: "Arial";
+  background-color: white !important;
+}
+.menu-logged li:first-child a{
+  color:#515151 !important;
+  font-weight: bold;
+  font-family:'switzerland';
+  font-size: 18px;
+}
+
+.dropdown-menu{
+  border-radius: 5px !important;
+}
+
+.dropdown-toggle::after{
+  display: none !important;
+}
+
+.menu-logged li:first-child {
+ margin-bottom: 1em;
 }
 
 .sing-in{

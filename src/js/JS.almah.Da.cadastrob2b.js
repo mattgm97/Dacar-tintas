@@ -194,7 +194,7 @@ async function clientSave() {
     var jsonSaveDadosUser = {
         "firstName": $("#nome").val(),
         "corporateName": $("#razaosocial").val(),
-        "corporateDocument": $("#cnpj").val(),
+        "corporateDocument": $("#cnpj").val().replace(/[\s-/,]+/g, ''),
         "tradeName": $("#nomefantasia").val(),
         "im": $("#im").val(),
         "stateRegistration": $("#inscriacaoEstadual").val(),
@@ -239,7 +239,7 @@ async function clientSave() {
 
 
 
-    if (resultscnpj.length >= 1 /*|| resultsemail.length >= 1*/) {
+    if (resultscnpj[0].corporateDocument != null /*|| resultsemail.length >= 1*/) {
         alreadyRequested = true;
     }
 
@@ -250,7 +250,7 @@ async function clientSave() {
     } else {
         console.log("nao existo ainda")
 
-        var urlSaveDadosUser = '/api/io/safedata/CL/documents/';
+        var urlSaveDadosUser = '/api/dataentities/CL/documents/';
 
         $.ajax({
             headers: {
@@ -289,6 +289,11 @@ function clientValidate() {
         clientSave();
     }
 }
+
+
+
+
+
 
 
 

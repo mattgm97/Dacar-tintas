@@ -1,6 +1,6 @@
 setTimeout(()=>{
     vtexjs.session.getSession().done(e => {
-        //  console.log(e)
+       
         let userInfo = e.namespaces.profile;
         let amIApproved = false
         fetch(`/api/dataentities/CL/search?_fields=email,approved&email=*${userInfo?.email?.value}*`, {

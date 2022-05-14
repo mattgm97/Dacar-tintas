@@ -78,17 +78,26 @@
                             
                             <ul style="padding-left: 0em;">
                                 <li class="link-orders">
-                                    <a href="/_secure/account#/orders" title="" class="btn btn-default btn-orders" style="display: flex;align-items: center;">
-                                        <svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M12.52 4.39225C12.52 6.81151 10.5543 8.7845 8.14386 8.7845C5.73345 8.7845 3.7677 6.81151 3.7677 4.39225C3.7677 1.97299 5.73345 0 8.14386 0C10.5543 0 12.52 1.97299 12.52 4.39225Z"
-                                                fill="white"></path>
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M16.2878 18.062C16.2878 20.6457 0 20.6457 0 18.062C0 14.1865 3.65072 11.2505 8.14392 11.2505C12.6605 11.2505 16.2878 14.1865 16.2878 18.062Z"
-                                                fill="white"></path>
-                                        </svg>
-                                        <span class="header-spam-title">Entrar</span>
-                                    </a>
+                                    <div class="dropdown">
+                                        <a href="#" title="" class="btn btn-default btn-orders dropdown-toggle" role="button" id="dropdownMenuLinklogin" data-bs-toggle="dropdown" aria-expanded="false" style="display: flex;align-items: center;">
+                                            <svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M12.52 4.39225C12.52 6.81151 10.5543 8.7845 8.14386 8.7845C5.73345 8.7845 3.7677 6.81151 3.7677 4.39225C3.7677 1.97299 5.73345 0 8.14386 0C10.5543 0 12.52 1.97299 12.52 4.39225Z"
+                                                    fill="white"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M16.2878 18.062C16.2878 20.6457 0 20.6457 0 18.062C0 14.1865 3.65072 11.2505 8.14392 11.2505C12.6605 11.2505 16.2878 14.1865 16.2878 18.062Z"
+                                                    fill="white"></path>
+                                            </svg>
+                                            <span class="header-spam-title">Entrar</span>
+                                        </a>
+
+                                        <ul class="dropdown-menu menu-logged" aria-labelledby="dropdownMenuLinklogin" style="margin: 0px;">
+                                            <li><a class="dropdown-item" href="/account#/profile">Minha Conta</a></li>
+                                            <li><a class="dropdown-item" href="/_secure/account#/orders">Meus Pedidos</a></li>
+                                            <li><a class="dropdown-item" href="/_secure/account#/authentication">Alterar Senha</a></li>
+                                          </ul>
+                                    </div>
+                                  
                                 </li>
                          
                             
